@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PAYConditionsView" customModule="Maxpay" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomCheckboxView" destination="Afa-Qc-RnE" id="sKG-je-dPA"/>
+                <outlet property="middleCheckboxView" destination="VYn-Km-teG" id="gOg-Am-mLl"/>
+                <outlet property="topCheckboxView" destination="Dwr-LO-VEL" id="zes-Wg-O7r"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="783"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Ms5-FQ-LtE" userLabel="Conditions Container">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="783"/>
+                    <subviews>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dwr-LO-VEL" customClass="PAYCheckboxView" customModule="Maxpay" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="250" constant="100" id="LDZ-kC-bG1"/>
+                            </constraints>
+                        </view>
+                        <view hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="VYn-Km-teG" customClass="PAYCheckboxView" customModule="Maxpay" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="250" constant="100" id="et4-BU-CTe"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isLinkDetectionAvailable" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view hidden="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="Afa-Qc-RnE" customClass="PAYCheckboxView" customModule="Maxpay" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="250" constant="100" id="wFy-zy-4yY"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isLinkDetectionAvailable" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <edgeInsets key="layoutMargins" top="4" left="0.0" bottom="0.0" right="0.0"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Ms5-FQ-LtE" secondAttribute="bottom" priority="750" id="I1F-g5-yAA"/>
+                <constraint firstItem="Ms5-FQ-LtE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LYc-cT-5Qe"/>
+                <constraint firstItem="Ms5-FQ-LtE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Qnr-oB-0Na"/>
+                <constraint firstAttribute="trailing" secondItem="Ms5-FQ-LtE" secondAttribute="trailing" id="yTJ-SW-vWz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="61.941964285714285"/>
+        </view>
+    </objects>
+</document>

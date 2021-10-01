@@ -1,0 +1,1326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6213807926F7D06500FBDCF6 /* PAYAddressField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6213807826F7D06500FBDCF6 /* PAYAddressField.swift */; };
+		6213807B26F7D07300FBDCF6 /* PAYCityField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6213807A26F7D07300FBDCF6 /* PAYCityField.swift */; };
+		6213807D26F7D07F00FBDCF6 /* PAYZipField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6213807C26F7D07F00FBDCF6 /* PAYZipField.swift */; };
+		6246D4C52643E77D008AC86F /* PAYIPAddressProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6246D4C42643E77D008AC86F /* PAYIPAddressProvider.swift */; };
+		624C1B732631602A0045E3EA /* maestro_card_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 624C1B6D263160290045E3EA /* maestro_card_icon.png */; };
+		624C1B742631602A0045E3EA /* discover_card_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 624C1B6E263160290045E3EA /* discover_card_icon.png */; };
+		624C1B752631602A0045E3EA /* diners_club_card_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 624C1B6F2631602A0045E3EA /* diners_club_card_icon.png */; };
+		624C1B762631602A0045E3EA /* mastercard_card_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 624C1B702631602A0045E3EA /* mastercard_card_icon.png */; };
+		624C1B772631602A0045E3EA /* amex_card_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 624C1B712631602A0045E3EA /* amex_card_icon.png */; };
+		624C1B782631602A0045E3EA /* visa_card_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 624C1B722631602A0045E3EA /* visa_card_icon.png */; };
+		6260650E26448F8800A76693 /* PAYPaymentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6260650D26448F8800A76693 /* PAYPaymentInfo.swift */; };
+		6260651526448FAF00A76693 /* PAYInitInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6260651426448FAF00A76693 /* PAYInitInfo.swift */; };
+		6260651A26448FCE00A76693 /* PAYCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6260651926448FCE00A76693 /* PAYCallback.swift */; };
+		6287571C26F8DAC800F87FAE /* PAYPhoneField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6287571B26F8DAC800F87FAE /* PAYPhoneField.swift */; };
+		62AA939C2643292B00BC7FDF /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA931F2643292900BC7FDF /* UIViewController+Extensions.swift */; };
+		62AA939D2643292B00BC7FDF /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93202643292900BC7FDF /* UIView+Extensions.swift */; };
+		62AA939E2643292B00BC7FDF /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93212643292900BC7FDF /* UIFont+Extensions.swift */; };
+		62AA939F2643292B00BC7FDF /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93222643292900BC7FDF /* UIColor+Extensions.swift */; };
+		62AA93A02643292B00BC7FDF /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93232643292900BC7FDF /* UIImage+Extensions.swift */; };
+		62AA93A12643292B00BC7FDF /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93252643292900BC7FDF /* Array+Extensions.swift */; };
+		62AA93A22643292B00BC7FDF /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93262643292900BC7FDF /* Int+Extensions.swift */; };
+		62AA93A32643292B00BC7FDF /* NumberFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93272643292900BC7FDF /* NumberFormatter+Extensions.swift */; };
+		62AA93A42643292B00BC7FDF /* CharacterSet+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93282643292900BC7FDF /* CharacterSet+Extensions.swift */; };
+		62AA93A52643292B00BC7FDF /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93292643292900BC7FDF /* String+Extension.swift */; };
+		62AA93A62643292B00BC7FDF /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA932A2643292900BC7FDF /* Data+Extension.swift */; };
+		62AA93A72643292B00BC7FDF /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA932B2643292900BC7FDF /* Dictionary+Extensions.swift */; };
+		62AA93A82643292B00BC7FDF /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA932C2643292900BC7FDF /* DateFormatter.swift */; };
+		62AA93A92643292B00BC7FDF /* Float+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA932D2643292900BC7FDF /* Float+Extensions.swift */; };
+		62AA93AA2643292B00BC7FDF /* Encodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA932F2643292900BC7FDF /* Encodable+Extensions.swift */; };
+		62AA93AB2643292B00BC7FDF /* PAYSignatureInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93332643292900BC7FDF /* PAYSignatureInfo.swift */; };
+		62AA93AC2643292B00BC7FDF /* PAYCardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93352643292900BC7FDF /* PAYCardInfo.swift */; };
+		62AA93AD2643292B00BC7FDF /* PAYAuth3DConfirm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93372643292900BC7FDF /* PAYAuth3DConfirm.swift */; };
+		62AA93AE2643292B00BC7FDF /* PAYTransactionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93382643292900BC7FDF /* PAYTransactionRequest.swift */; };
+		62AA93AF2643292B00BC7FDF /* PAYCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA933A2643292900BC7FDF /* PAYCard.swift */; };
+		62AA93B02643292B00BC7FDF /* PAYCheckboxConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA933C2643292900BC7FDF /* PAYCheckboxConfiguration.swift */; };
+		62AA93B12643292B00BC7FDF /* PAYPaymentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA933F2643292900BC7FDF /* PAYPaymentConfiguration.swift */; };
+		62AA93B22643292B00BC7FDF /* PAYCustomer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93412643292900BC7FDF /* PAYCustomer.swift */; };
+		62AA93B32643292B00BC7FDF /* PAYMerchant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93432643292900BC7FDF /* PAYMerchant.swift */; };
+		62AA93B42643292B00BC7FDF /* PAYOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93452643292900BC7FDF /* PAYOrder.swift */; };
+		62AA93B52643292B00BC7FDF /* PAYTransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93472643292900BC7FDF /* PAYTransactionResponse.swift */; };
+		62AA93B62643292B00BC7FDF /* PAYTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93492643292900BC7FDF /* PAYTheme.swift */; };
+		62AA93B72643292B00BC7FDF /* PAYPAYAvailableFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA934B2643292900BC7FDF /* PAYPAYAvailableFields.swift */; };
+		62AA93B82643292B00BC7FDF /* PAYFieldStateObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA934E2643292900BC7FDF /* PAYFieldStateObserver.swift */; };
+		62AA93B92643292B00BC7FDF /* PAYKeyboardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93502643292A00BC7FDF /* PAYKeyboardService.swift */; };
+		62AA93BA2643292B00BC7FDF /* PAYCardTypeDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93522643292A00BC7FDF /* PAYCardTypeDetector.swift */; };
+		62AA93BB2643292B00BC7FDF /* PAYNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93542643292A00BC7FDF /* PAYNetworkService.swift */; };
+		62AA93BC2643292B00BC7FDF /* PAYNetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93552643292A00BC7FDF /* PAYNetworkAPI.swift */; };
+		62AA93BD2643292B00BC7FDF /* PAYL10nService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93572643292A00BC7FDF /* PAYL10nService.swift */; };
+		62AA93BE2643292B00BC7FDF /* PAYBundleLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93592643292A00BC7FDF /* PAYBundleLocator.swift */; };
+		62AA93BF2643292B00BC7FDF /* PAYCheckboxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62AA935D2643292A00BC7FDF /* PAYCheckboxView.xib */; };
+		62AA93C02643292B00BC7FDF /* PAYCheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA935E2643292A00BC7FDF /* PAYCheckboxView.swift */; };
+		62AA93C12643292B00BC7FDF /* PAYDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93602643292A00BC7FDF /* PAYDatePickerView.swift */; };
+		62AA93C22643292B00BC7FDF /* PAYDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62AA93612643292A00BC7FDF /* PAYDatePickerView.xib */; };
+		62AA93C32643292B00BC7FDF /* PAYLockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93632643292A00BC7FDF /* PAYLockView.swift */; };
+		62AA93C42643292B00BC7FDF /* PAYCustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93652643292A00BC7FDF /* PAYCustomTextView.swift */; };
+		62AA93C52643292B00BC7FDF /* PAYPaymentRootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62AA93672643292A00BC7FDF /* PAYPaymentRootView.xib */; };
+		62AA93C62643292B00BC7FDF /* PAYPaymentRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93682643292A00BC7FDF /* PAYPaymentRootView.swift */; };
+		62AA93C72643292B00BC7FDF /* PAYInputCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA936A2643292A00BC7FDF /* PAYInputCardView.swift */; };
+		62AA93C82643292B00BC7FDF /* PAYInputCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62AA936B2643292A00BC7FDF /* PAYInputCardView.xib */; };
+		62AA93C92643292B00BC7FDF /* PAYConditionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62AA936D2643292A00BC7FDF /* PAYConditionsView.xib */; };
+		62AA93CA2643292B00BC7FDF /* PAYConditionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA936E2643292A00BC7FDF /* PAYConditionsView.swift */; };
+		62AA93CB2643292B00BC7FDF /* PAYNibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93702643292A00BC7FDF /* PAYNibLoadableView.swift */; };
+		62AA93CC2643292B00BC7FDF /* PAYBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93722643292A00BC7FDF /* PAYBaseView.swift */; };
+		62AA93CD2643292B00BC7FDF /* PAYBillingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62AA93742643292A00BC7FDF /* PAYBillingView.xib */; };
+		62AA93CE2643292B00BC7FDF /* PAYBillingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93752643292A00BC7FDF /* PAYBillingView.swift */; };
+		62AA93CF2643292B00BC7FDF /* PAYL10nKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93782643292A00BC7FDF /* PAYL10nKey.swift */; };
+		62AA93D02643292B00BC7FDF /* PAYCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93792643292A00BC7FDF /* PAYCardType.swift */; };
+		62AA93D12643292B00BC7FDF /* PAYHTTPMethodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA937A2643292A00BC7FDF /* PAYHTTPMethodType.swift */; };
+		62AA93D22643292B00BC7FDF /* PAYTransactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA937C2643292A00BC7FDF /* PAYTransactionType.swift */; };
+		62AA93D32643292B00BC7FDF /* PAYCOFType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA937D2643292A00BC7FDF /* PAYCOFType.swift */; };
+		62AA93D52643292B00BC7FDF /* PAYCVVField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93812643292A00BC7FDF /* PAYCVVField.swift */; };
+		62AA93D62643292B00BC7FDF /* PAYCardHolderField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93832643292A00BC7FDF /* PAYCardHolderField.swift */; };
+		62AA93D72643292B00BC7FDF /* PAYCountryField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93852643292A00BC7FDF /* PAYCountryField.swift */; };
+		62AA93D82643292B00BC7FDF /* PAYEmailField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93872643292A00BC7FDF /* PAYEmailField.swift */; };
+		62AA93D92643292B00BC7FDF /* PAYTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93892643292A00BC7FDF /* PAYTextField.swift */; };
+		62AA93DA2643292B00BC7FDF /* PAYCardNumberField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA938B2643292A00BC7FDF /* PAYCardNumberField.swift */; };
+		62AA93DB2643292B00BC7FDF /* PAYExpiredDateField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA938D2643292A00BC7FDF /* PAYExpiredDateField.swift */; };
+		62AA93DC2643292B00BC7FDF /* PAYNameField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA938F2643292A00BC7FDF /* PAYNameField.swift */; };
+		62AA93DD2643292B00BC7FDF /* PAYParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93922643292A00BC7FDF /* PAYParserError.swift */; };
+		62AA93DE2643292B00BC7FDF /* PAYNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93942643292A00BC7FDF /* PAYNetworkError.swift */; };
+		62AA93DF2643292B00BC7FDF /* PAYPaymentControllerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93962643292A00BC7FDF /* PAYPaymentControllerError.swift */; };
+		62AA93E02643292B00BC7FDF /* PAYPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93992643292A00BC7FDF /* PAYPaymentViewController.swift */; };
+		62AA93E12643292B00BC7FDF /* PAYWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA939B2643292B00BC7FDF /* PAYWebViewController.swift */; };
+		62E54BCC26F78B2B00834B7F /* dankort_card_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 62E54BCA26F78B2B00834B7F /* dankort_card_icon.png */; };
+		62E54BCD26F78B2B00834B7F /* jcb_card_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 62E54BCB26F78B2B00834B7F /* jcb_card_icon.png */; };
+		D7F4FA192566CF96005DE0D1 /* noname_card_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7F4F9A32566CF96005DE0D1 /* noname_card_icon.png */; };
+		D7F4FA1A2566CF96005DE0D1 /* white_checkmark_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7F4F9A42566CF96005DE0D1 /* white_checkmark_icon.png */; };
+		D7F4FA1C2566CF96005DE0D1 /* white_checkmark_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D7F4F9A62566CF96005DE0D1 /* white_checkmark_icon@2x.png */; };
+		D7F4FA1F2566CF96005DE0D1 /* white_checkmark_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D7F4F9A92566CF96005DE0D1 /* white_checkmark_icon@3x.png */; };
+		D7F4FA212566CF97005DE0D1 /* noname_card_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D7F4F9AB2566CF96005DE0D1 /* noname_card_icon@3x.png */; };
+		D7F4FA232566CF97005DE0D1 /* noname_card_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D7F4F9AD2566CF96005DE0D1 /* noname_card_icon@2x.png */; };
+		D7F4FA252566CF97005DE0D1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7F4F9B02566CF96005DE0D1 /* Localizable.strings */; };
+		D7F852D7255980C00016EFFF /* Maxpay.h in Headers */ = {isa = PBXBuildFile; fileRef = D7F852C9255980C00016EFFF /* Maxpay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6213807826F7D06500FBDCF6 /* PAYAddressField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAYAddressField.swift; sourceTree = "<group>"; };
+		6213807A26F7D07300FBDCF6 /* PAYCityField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAYCityField.swift; sourceTree = "<group>"; };
+		6213807C26F7D07F00FBDCF6 /* PAYZipField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAYZipField.swift; sourceTree = "<group>"; };
+		6246D4C42643E77D008AC86F /* PAYIPAddressProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAYIPAddressProvider.swift; sourceTree = "<group>"; };
+		624C1B6D263160290045E3EA /* maestro_card_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maestro_card_icon.png; sourceTree = "<group>"; };
+		624C1B6E263160290045E3EA /* discover_card_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discover_card_icon.png; sourceTree = "<group>"; };
+		624C1B6F2631602A0045E3EA /* diners_club_card_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diners_club_card_icon.png; sourceTree = "<group>"; };
+		624C1B702631602A0045E3EA /* mastercard_card_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mastercard_card_icon.png; sourceTree = "<group>"; };
+		624C1B712631602A0045E3EA /* amex_card_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amex_card_icon.png; sourceTree = "<group>"; };
+		624C1B722631602A0045E3EA /* visa_card_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = visa_card_icon.png; sourceTree = "<group>"; };
+		6260650D26448F8800A76693 /* PAYPaymentInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAYPaymentInfo.swift; sourceTree = "<group>"; };
+		6260651426448FAF00A76693 /* PAYInitInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAYInitInfo.swift; sourceTree = "<group>"; };
+		6260651926448FCE00A76693 /* PAYCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAYCallback.swift; sourceTree = "<group>"; };
+		6287571B26F8DAC800F87FAE /* PAYPhoneField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAYPhoneField.swift; sourceTree = "<group>"; };
+		62AA931F2643292900BC7FDF /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		62AA93202643292900BC7FDF /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		62AA93212643292900BC7FDF /* UIFont+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		62AA93222643292900BC7FDF /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		62AA93232643292900BC7FDF /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		62AA93252643292900BC7FDF /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		62AA93262643292900BC7FDF /* Int+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		62AA93272643292900BC7FDF /* NumberFormatter+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		62AA93282643292900BC7FDF /* CharacterSet+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CharacterSet+Extensions.swift"; sourceTree = "<group>"; };
+		62AA93292643292900BC7FDF /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		62AA932A2643292900BC7FDF /* Data+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		62AA932B2643292900BC7FDF /* Dictionary+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extensions.swift"; sourceTree = "<group>"; };
+		62AA932C2643292900BC7FDF /* DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		62AA932D2643292900BC7FDF /* Float+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+Extensions.swift"; sourceTree = "<group>"; };
+		62AA932F2643292900BC7FDF /* Encodable+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encodable+Extensions.swift"; sourceTree = "<group>"; };
+		62AA93332643292900BC7FDF /* PAYSignatureInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYSignatureInfo.swift; sourceTree = "<group>"; };
+		62AA93352643292900BC7FDF /* PAYCardInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYCardInfo.swift; sourceTree = "<group>"; };
+		62AA93372643292900BC7FDF /* PAYAuth3DConfirm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYAuth3DConfirm.swift; sourceTree = "<group>"; };
+		62AA93382643292900BC7FDF /* PAYTransactionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYTransactionRequest.swift; sourceTree = "<group>"; };
+		62AA933A2643292900BC7FDF /* PAYCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYCard.swift; sourceTree = "<group>"; };
+		62AA933C2643292900BC7FDF /* PAYCheckboxConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYCheckboxConfiguration.swift; sourceTree = "<group>"; };
+		62AA933F2643292900BC7FDF /* PAYPaymentConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYPaymentConfiguration.swift; sourceTree = "<group>"; };
+		62AA93412643292900BC7FDF /* PAYCustomer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYCustomer.swift; sourceTree = "<group>"; };
+		62AA93432643292900BC7FDF /* PAYMerchant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYMerchant.swift; sourceTree = "<group>"; };
+		62AA93452643292900BC7FDF /* PAYOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYOrder.swift; sourceTree = "<group>"; };
+		62AA93472643292900BC7FDF /* PAYTransactionResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYTransactionResponse.swift; sourceTree = "<group>"; };
+		62AA93492643292900BC7FDF /* PAYTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYTheme.swift; sourceTree = "<group>"; };
+		62AA934B2643292900BC7FDF /* PAYPAYAvailableFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYPAYAvailableFields.swift; sourceTree = "<group>"; };
+		62AA934E2643292900BC7FDF /* PAYFieldStateObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYFieldStateObserver.swift; sourceTree = "<group>"; };
+		62AA93502643292A00BC7FDF /* PAYKeyboardService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYKeyboardService.swift; sourceTree = "<group>"; };
+		62AA93522643292A00BC7FDF /* PAYCardTypeDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYCardTypeDetector.swift; sourceTree = "<group>"; };
+		62AA93542643292A00BC7FDF /* PAYNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYNetworkService.swift; sourceTree = "<group>"; };
+		62AA93552643292A00BC7FDF /* PAYNetworkAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYNetworkAPI.swift; sourceTree = "<group>"; };
+		62AA93572643292A00BC7FDF /* PAYL10nService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYL10nService.swift; sourceTree = "<group>"; };
+		62AA93592643292A00BC7FDF /* PAYBundleLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYBundleLocator.swift; sourceTree = "<group>"; };
+		62AA935D2643292A00BC7FDF /* PAYCheckboxView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PAYCheckboxView.xib; sourceTree = "<group>"; };
+		62AA935E2643292A00BC7FDF /* PAYCheckboxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYCheckboxView.swift; sourceTree = "<group>"; };
+		62AA93602643292A00BC7FDF /* PAYDatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYDatePickerView.swift; sourceTree = "<group>"; };
+		62AA93612643292A00BC7FDF /* PAYDatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PAYDatePickerView.xib; sourceTree = "<group>"; };
+		62AA93632643292A00BC7FDF /* PAYLockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYLockView.swift; sourceTree = "<group>"; };
+		62AA93652643292A00BC7FDF /* PAYCustomTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYCustomTextView.swift; sourceTree = "<group>"; };
+		62AA93672643292A00BC7FDF /* PAYPaymentRootView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PAYPaymentRootView.xib; sourceTree = "<group>"; };
+		62AA93682643292A00BC7FDF /* PAYPaymentRootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYPaymentRootView.swift; sourceTree = "<group>"; };
+		62AA936A2643292A00BC7FDF /* PAYInputCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYInputCardView.swift; sourceTree = "<group>"; };
+		62AA936B2643292A00BC7FDF /* PAYInputCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PAYInputCardView.xib; sourceTree = "<group>"; };
+		62AA936D2643292A00BC7FDF /* PAYConditionsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PAYConditionsView.xib; sourceTree = "<group>"; };
+		62AA936E2643292A00BC7FDF /* PAYConditionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYConditionsView.swift; sourceTree = "<group>"; };
+		62AA93702643292A00BC7FDF /* PAYNibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYNibLoadableView.swift; sourceTree = "<group>"; };
+		62AA93722643292A00BC7FDF /* PAYBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYBaseView.swift; sourceTree = "<group>"; };
+		62AA93742643292A00BC7FDF /* PAYBillingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PAYBillingView.xib; sourceTree = "<group>"; };
+		62AA93752643292A00BC7FDF /* PAYBillingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYBillingView.swift; sourceTree = "<group>"; };
+		62AA93782643292A00BC7FDF /* PAYL10nKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYL10nKey.swift; sourceTree = "<group>"; };
+		62AA93792643292A00BC7FDF /* PAYCardType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYCardType.swift; sourceTree = "<group>"; };
+		62AA937A2643292A00BC7FDF /* PAYHTTPMethodType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYHTTPMethodType.swift; sourceTree = "<group>"; };
+		62AA937C2643292A00BC7FDF /* PAYTransactionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYTransactionType.swift; sourceTree = "<group>"; };
+		62AA937D2643292A00BC7FDF /* PAYCOFType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYCOFType.swift; sourceTree = "<group>"; };
+		62AA93812643292A00BC7FDF /* PAYCVVField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYCVVField.swift; sourceTree = "<group>"; };
+		62AA93832643292A00BC7FDF /* PAYCardHolderField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYCardHolderField.swift; sourceTree = "<group>"; };
+		62AA93852643292A00BC7FDF /* PAYCountryField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYCountryField.swift; sourceTree = "<group>"; };
+		62AA93872643292A00BC7FDF /* PAYEmailField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYEmailField.swift; sourceTree = "<group>"; };
+		62AA93892643292A00BC7FDF /* PAYTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYTextField.swift; sourceTree = "<group>"; };
+		62AA938B2643292A00BC7FDF /* PAYCardNumberField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYCardNumberField.swift; sourceTree = "<group>"; };
+		62AA938D2643292A00BC7FDF /* PAYExpiredDateField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYExpiredDateField.swift; sourceTree = "<group>"; };
+		62AA938F2643292A00BC7FDF /* PAYNameField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYNameField.swift; sourceTree = "<group>"; };
+		62AA93922643292A00BC7FDF /* PAYParserError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYParserError.swift; sourceTree = "<group>"; };
+		62AA93942643292A00BC7FDF /* PAYNetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYNetworkError.swift; sourceTree = "<group>"; };
+		62AA93962643292A00BC7FDF /* PAYPaymentControllerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYPaymentControllerError.swift; sourceTree = "<group>"; };
+		62AA93992643292A00BC7FDF /* PAYPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYPaymentViewController.swift; sourceTree = "<group>"; };
+		62AA939B2643292B00BC7FDF /* PAYWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYWebViewController.swift; sourceTree = "<group>"; };
+		62E54BCA26F78B2B00834B7F /* dankort_card_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dankort_card_icon.png; sourceTree = "<group>"; };
+		62E54BCB26F78B2B00834B7F /* jcb_card_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jcb_card_icon.png; sourceTree = "<group>"; };
+		D7F4F9A32566CF96005DE0D1 /* noname_card_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noname_card_icon.png; sourceTree = "<group>"; };
+		D7F4F9A42566CF96005DE0D1 /* white_checkmark_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_checkmark_icon.png; sourceTree = "<group>"; };
+		D7F4F9A62566CF96005DE0D1 /* white_checkmark_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white_checkmark_icon@2x.png"; sourceTree = "<group>"; };
+		D7F4F9A92566CF96005DE0D1 /* white_checkmark_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white_checkmark_icon@3x.png"; sourceTree = "<group>"; };
+		D7F4F9AB2566CF96005DE0D1 /* noname_card_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "noname_card_icon@3x.png"; sourceTree = "<group>"; };
+		D7F4F9AD2566CF96005DE0D1 /* noname_card_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "noname_card_icon@2x.png"; sourceTree = "<group>"; };
+		D7F4F9B12566CF96005DE0D1 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D7F4F9B22566CF96005DE0D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D7F4F9B32566CF96005DE0D1 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D7F4F9B42566CF96005DE0D1 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D7F4F9B52566CF96005DE0D1 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D7F4F9B62566CF96005DE0D1 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D7F4F9B72566CF96005DE0D1 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D7F4F9B82566CF96005DE0D1 /* en-IE */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-IE"; path = "en-IE.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D7F4F9B92566CF96005DE0D1 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D7F4F9BA2566CF96005DE0D1 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D7F4F9BB2566CF96005DE0D1 /* lt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lt; path = lt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D7F4F9BC2566CF96005DE0D1 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D7F4F9BD2566CF96005DE0D1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D7F4F9BE2566CF96005DE0D1 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D7F4F9BF2566CF96005DE0D1 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D7F4F9C02566CF96005DE0D1 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D7F852C6255980C00016EFFF /* MaxpayPaymentSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaxpayPaymentSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7F852C9255980C00016EFFF /* Maxpay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Maxpay.h; sourceTree = "<group>"; };
+		D7F852CA255980C00016EFFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7F852C3255980C00016EFFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6213807526F7CFB400FBDCF6 /* PAYAddressField */ = {
+			isa = PBXGroup;
+			children = (
+				6213807826F7D06500FBDCF6 /* PAYAddressField.swift */,
+			);
+			path = PAYAddressField;
+			sourceTree = "<group>";
+		};
+		6213807626F7D00400FBDCF6 /* PAYZipField */ = {
+			isa = PBXGroup;
+			children = (
+				6213807C26F7D07F00FBDCF6 /* PAYZipField.swift */,
+			);
+			path = PAYZipField;
+			sourceTree = "<group>";
+		};
+		6213807726F7D01100FBDCF6 /* PAYCityField */ = {
+			isa = PBXGroup;
+			children = (
+				6213807A26F7D07300FBDCF6 /* PAYCityField.swift */,
+			);
+			path = PAYCityField;
+			sourceTree = "<group>";
+		};
+		6246D4C32643E761008AC86F /* PAYIPAddressProvider */ = {
+			isa = PBXGroup;
+			children = (
+				6246D4C42643E77D008AC86F /* PAYIPAddressProvider.swift */,
+			);
+			path = PAYIPAddressProvider;
+			sourceTree = "<group>";
+		};
+		624C1B6B26315FFB0045E3EA /* UIElements */ = {
+			isa = PBXGroup;
+			children = (
+				D7F4F9A42566CF96005DE0D1 /* white_checkmark_icon.png */,
+				D7F4F9A62566CF96005DE0D1 /* white_checkmark_icon@2x.png */,
+				D7F4F9A92566CF96005DE0D1 /* white_checkmark_icon@3x.png */,
+			);
+			path = UIElements;
+			sourceTree = "<group>";
+		};
+		624C1B6C263160100045E3EA /* CardLogos */ = {
+			isa = PBXGroup;
+			children = (
+				62E54BCA26F78B2B00834B7F /* dankort_card_icon.png */,
+				62E54BCB26F78B2B00834B7F /* jcb_card_icon.png */,
+				624C1B712631602A0045E3EA /* amex_card_icon.png */,
+				624C1B6F2631602A0045E3EA /* diners_club_card_icon.png */,
+				624C1B6E263160290045E3EA /* discover_card_icon.png */,
+				624C1B6D263160290045E3EA /* maestro_card_icon.png */,
+				624C1B702631602A0045E3EA /* mastercard_card_icon.png */,
+				624C1B722631602A0045E3EA /* visa_card_icon.png */,
+				D7F4F9A32566CF96005DE0D1 /* noname_card_icon.png */,
+				D7F4F9AB2566CF96005DE0D1 /* noname_card_icon@3x.png */,
+				D7F4F9AD2566CF96005DE0D1 /* noname_card_icon@2x.png */,
+			);
+			path = CardLogos;
+			sourceTree = "<group>";
+		};
+		6260650C26448F7600A76693 /* PAYInitInfo */ = {
+			isa = PBXGroup;
+			children = (
+				6260651426448FAF00A76693 /* PAYInitInfo.swift */,
+			);
+			path = PAYInitInfo;
+			sourceTree = "<group>";
+		};
+		6260651326448F9000A76693 /* PAYPaymentInfo */ = {
+			isa = PBXGroup;
+			children = (
+				6260650D26448F8800A76693 /* PAYPaymentInfo.swift */,
+			);
+			path = PAYPaymentInfo;
+			sourceTree = "<group>";
+		};
+		6260651826448FC300A76693 /* PAYCallback */ = {
+			isa = PBXGroup;
+			children = (
+				6260651926448FCE00A76693 /* PAYCallback.swift */,
+			);
+			path = PAYCallback;
+			sourceTree = "<group>";
+		};
+		6287571A26F8DAA800F87FAE /* PAYPhoneField */ = {
+			isa = PBXGroup;
+			children = (
+				6287571B26F8DAC800F87FAE /* PAYPhoneField.swift */,
+			);
+			path = PAYPhoneField;
+			sourceTree = "<group>";
+		};
+		62AA931D2643292900BC7FDF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				62AA931E2643292900BC7FDF /* UIKit */,
+				62AA93242643292900BC7FDF /* Foundation */,
+				62AA932E2643292900BC7FDF /* Encodable */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		62AA931E2643292900BC7FDF /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				62AA931F2643292900BC7FDF /* UIViewController+Extensions.swift */,
+				62AA93202643292900BC7FDF /* UIView+Extensions.swift */,
+				62AA93212643292900BC7FDF /* UIFont+Extensions.swift */,
+				62AA93222643292900BC7FDF /* UIColor+Extensions.swift */,
+				62AA93232643292900BC7FDF /* UIImage+Extensions.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		62AA93242643292900BC7FDF /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93252643292900BC7FDF /* Array+Extensions.swift */,
+				62AA93262643292900BC7FDF /* Int+Extensions.swift */,
+				62AA93272643292900BC7FDF /* NumberFormatter+Extensions.swift */,
+				62AA93282643292900BC7FDF /* CharacterSet+Extensions.swift */,
+				62AA93292643292900BC7FDF /* String+Extension.swift */,
+				62AA932A2643292900BC7FDF /* Data+Extension.swift */,
+				62AA932B2643292900BC7FDF /* Dictionary+Extensions.swift */,
+				62AA932C2643292900BC7FDF /* DateFormatter.swift */,
+				62AA932D2643292900BC7FDF /* Float+Extensions.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		62AA932E2643292900BC7FDF /* Encodable */ = {
+			isa = PBXGroup;
+			children = (
+				62AA932F2643292900BC7FDF /* Encodable+Extensions.swift */,
+			);
+			path = Encodable;
+			sourceTree = "<group>";
+		};
+		62AA93302643292900BC7FDF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93312643292900BC7FDF /* Private Models */,
+				62AA933D2643292900BC7FDF /* Public Models */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		62AA93312643292900BC7FDF /* Private Models */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93402643292900BC7FDF /* PAYCustomer */,
+				62AA93422643292900BC7FDF /* PAYMerchant */,
+				62AA93442643292900BC7FDF /* PAYOrder */,
+				62AA933E2643292900BC7FDF /* PAYPaymentConfiguration */,
+				62AA93392643292900BC7FDF /* PAYCard */,
+				62AA93342643292900BC7FDF /* PAYCardInfo */,
+				62AA933B2643292900BC7FDF /* PAYCheckboxConfiguration */,
+				62AA93362643292900BC7FDF /* PAYTransactionRequest */,
+			);
+			path = "Private Models";
+			sourceTree = "<group>";
+		};
+		62AA93322643292900BC7FDF /* PAYSignatureInfo */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93332643292900BC7FDF /* PAYSignatureInfo.swift */,
+			);
+			path = PAYSignatureInfo;
+			sourceTree = "<group>";
+		};
+		62AA93342643292900BC7FDF /* PAYCardInfo */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93352643292900BC7FDF /* PAYCardInfo.swift */,
+			);
+			path = PAYCardInfo;
+			sourceTree = "<group>";
+		};
+		62AA93362643292900BC7FDF /* PAYTransactionRequest */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93372643292900BC7FDF /* PAYAuth3DConfirm.swift */,
+				62AA93382643292900BC7FDF /* PAYTransactionRequest.swift */,
+			);
+			path = PAYTransactionRequest;
+			sourceTree = "<group>";
+		};
+		62AA93392643292900BC7FDF /* PAYCard */ = {
+			isa = PBXGroup;
+			children = (
+				62AA933A2643292900BC7FDF /* PAYCard.swift */,
+			);
+			path = PAYCard;
+			sourceTree = "<group>";
+		};
+		62AA933B2643292900BC7FDF /* PAYCheckboxConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				62AA933C2643292900BC7FDF /* PAYCheckboxConfiguration.swift */,
+			);
+			path = PAYCheckboxConfiguration;
+			sourceTree = "<group>";
+		};
+		62AA933D2643292900BC7FDF /* Public Models */ = {
+			isa = PBXGroup;
+			children = (
+				6260650C26448F7600A76693 /* PAYInitInfo */,
+				6260651326448F9000A76693 /* PAYPaymentInfo */,
+				6260651826448FC300A76693 /* PAYCallback */,
+				62AA934A2643292900BC7FDF /* PAYFormFieldsConfiguration */,
+				62AA93322643292900BC7FDF /* PAYSignatureInfo */,
+				62AA93482643292900BC7FDF /* PAYTheme */,
+				62AA93462643292900BC7FDF /* PAYTransactionResponse */,
+			);
+			path = "Public Models";
+			sourceTree = "<group>";
+		};
+		62AA933E2643292900BC7FDF /* PAYPaymentConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				62AA933F2643292900BC7FDF /* PAYPaymentConfiguration.swift */,
+			);
+			path = PAYPaymentConfiguration;
+			sourceTree = "<group>";
+		};
+		62AA93402643292900BC7FDF /* PAYCustomer */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93412643292900BC7FDF /* PAYCustomer.swift */,
+			);
+			path = PAYCustomer;
+			sourceTree = "<group>";
+		};
+		62AA93422643292900BC7FDF /* PAYMerchant */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93432643292900BC7FDF /* PAYMerchant.swift */,
+			);
+			path = PAYMerchant;
+			sourceTree = "<group>";
+		};
+		62AA93442643292900BC7FDF /* PAYOrder */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93452643292900BC7FDF /* PAYOrder.swift */,
+			);
+			path = PAYOrder;
+			sourceTree = "<group>";
+		};
+		62AA93462643292900BC7FDF /* PAYTransactionResponse */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93472643292900BC7FDF /* PAYTransactionResponse.swift */,
+			);
+			path = PAYTransactionResponse;
+			sourceTree = "<group>";
+		};
+		62AA93482643292900BC7FDF /* PAYTheme */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93492643292900BC7FDF /* PAYTheme.swift */,
+			);
+			path = PAYTheme;
+			sourceTree = "<group>";
+		};
+		62AA934A2643292900BC7FDF /* PAYFormFieldsConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				62AA934B2643292900BC7FDF /* PAYPAYAvailableFields.swift */,
+			);
+			path = PAYFormFieldsConfiguration;
+			sourceTree = "<group>";
+		};
+		62AA934C2643292900BC7FDF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6246D4C32643E761008AC86F /* PAYIPAddressProvider */,
+				62AA934D2643292900BC7FDF /* PAYFieldStateObserver */,
+				62AA934F2643292A00BC7FDF /* PAYKeyboardService */,
+				62AA93512643292A00BC7FDF /* PAYCardTypeDetector */,
+				62AA93532643292A00BC7FDF /* Network */,
+				62AA93562643292A00BC7FDF /* PAYL10nService */,
+				62AA93582643292A00BC7FDF /* PAYBundleLocator */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		62AA934D2643292900BC7FDF /* PAYFieldStateObserver */ = {
+			isa = PBXGroup;
+			children = (
+				62AA934E2643292900BC7FDF /* PAYFieldStateObserver.swift */,
+			);
+			path = PAYFieldStateObserver;
+			sourceTree = "<group>";
+		};
+		62AA934F2643292A00BC7FDF /* PAYKeyboardService */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93502643292A00BC7FDF /* PAYKeyboardService.swift */,
+			);
+			path = PAYKeyboardService;
+			sourceTree = "<group>";
+		};
+		62AA93512643292A00BC7FDF /* PAYCardTypeDetector */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93522643292A00BC7FDF /* PAYCardTypeDetector.swift */,
+			);
+			path = PAYCardTypeDetector;
+			sourceTree = "<group>";
+		};
+		62AA93532643292A00BC7FDF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93542643292A00BC7FDF /* PAYNetworkService.swift */,
+				62AA93552643292A00BC7FDF /* PAYNetworkAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		62AA93562643292A00BC7FDF /* PAYL10nService */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93572643292A00BC7FDF /* PAYL10nService.swift */,
+			);
+			path = PAYL10nService;
+			sourceTree = "<group>";
+		};
+		62AA93582643292A00BC7FDF /* PAYBundleLocator */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93592643292A00BC7FDF /* PAYBundleLocator.swift */,
+			);
+			path = PAYBundleLocator;
+			sourceTree = "<group>";
+		};
+		62AA935A2643292A00BC7FDF /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				62AA935B2643292A00BC7FDF /* UI Components */,
+				62AA93762643292A00BC7FDF /* Enums */,
+				62AA937F2643292A00BC7FDF /* Fields */,
+				62AA93902643292A00BC7FDF /* Errors */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		62AA935B2643292A00BC7FDF /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				62AA935C2643292A00BC7FDF /* PAYCheckboxView */,
+				62AA935F2643292A00BC7FDF /* PAYDatePickerView */,
+				62AA93622643292A00BC7FDF /* PAYLockView */,
+				62AA93642643292A00BC7FDF /* PAYCustomTextView */,
+				62AA93662643292A00BC7FDF /* PAYPaymentRootView */,
+				62AA93692643292A00BC7FDF /* PAYInputCardView */,
+				62AA936C2643292A00BC7FDF /* PAYConditionsView */,
+				62AA936F2643292A00BC7FDF /* PAYNibLoadableView */,
+				62AA93712643292A00BC7FDF /* PAYBaseView */,
+				62AA93732643292A00BC7FDF /* PAYBillingView */,
+			);
+			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		62AA935C2643292A00BC7FDF /* PAYCheckboxView */ = {
+			isa = PBXGroup;
+			children = (
+				62AA935D2643292A00BC7FDF /* PAYCheckboxView.xib */,
+				62AA935E2643292A00BC7FDF /* PAYCheckboxView.swift */,
+			);
+			path = PAYCheckboxView;
+			sourceTree = "<group>";
+		};
+		62AA935F2643292A00BC7FDF /* PAYDatePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93602643292A00BC7FDF /* PAYDatePickerView.swift */,
+				62AA93612643292A00BC7FDF /* PAYDatePickerView.xib */,
+			);
+			path = PAYDatePickerView;
+			sourceTree = "<group>";
+		};
+		62AA93622643292A00BC7FDF /* PAYLockView */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93632643292A00BC7FDF /* PAYLockView.swift */,
+			);
+			path = PAYLockView;
+			sourceTree = "<group>";
+		};
+		62AA93642643292A00BC7FDF /* PAYCustomTextView */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93652643292A00BC7FDF /* PAYCustomTextView.swift */,
+			);
+			path = PAYCustomTextView;
+			sourceTree = "<group>";
+		};
+		62AA93662643292A00BC7FDF /* PAYPaymentRootView */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93672643292A00BC7FDF /* PAYPaymentRootView.xib */,
+				62AA93682643292A00BC7FDF /* PAYPaymentRootView.swift */,
+			);
+			path = PAYPaymentRootView;
+			sourceTree = "<group>";
+		};
+		62AA93692643292A00BC7FDF /* PAYInputCardView */ = {
+			isa = PBXGroup;
+			children = (
+				62AA936A2643292A00BC7FDF /* PAYInputCardView.swift */,
+				62AA936B2643292A00BC7FDF /* PAYInputCardView.xib */,
+			);
+			path = PAYInputCardView;
+			sourceTree = "<group>";
+		};
+		62AA936C2643292A00BC7FDF /* PAYConditionsView */ = {
+			isa = PBXGroup;
+			children = (
+				62AA936D2643292A00BC7FDF /* PAYConditionsView.xib */,
+				62AA936E2643292A00BC7FDF /* PAYConditionsView.swift */,
+			);
+			path = PAYConditionsView;
+			sourceTree = "<group>";
+		};
+		62AA936F2643292A00BC7FDF /* PAYNibLoadableView */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93702643292A00BC7FDF /* PAYNibLoadableView.swift */,
+			);
+			path = PAYNibLoadableView;
+			sourceTree = "<group>";
+		};
+		62AA93712643292A00BC7FDF /* PAYBaseView */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93722643292A00BC7FDF /* PAYBaseView.swift */,
+			);
+			path = PAYBaseView;
+			sourceTree = "<group>";
+		};
+		62AA93732643292A00BC7FDF /* PAYBillingView */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93742643292A00BC7FDF /* PAYBillingView.xib */,
+				62AA93752643292A00BC7FDF /* PAYBillingView.swift */,
+			);
+			path = PAYBillingView;
+			sourceTree = "<group>";
+		};
+		62AA93762643292A00BC7FDF /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93772643292A00BC7FDF /* Private Enums */,
+				62AA937B2643292A00BC7FDF /* Public Enums */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		62AA93772643292A00BC7FDF /* Private Enums */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93782643292A00BC7FDF /* PAYL10nKey.swift */,
+				62AA93792643292A00BC7FDF /* PAYCardType.swift */,
+				62AA937A2643292A00BC7FDF /* PAYHTTPMethodType.swift */,
+			);
+			path = "Private Enums";
+			sourceTree = "<group>";
+		};
+		62AA937B2643292A00BC7FDF /* Public Enums */ = {
+			isa = PBXGroup;
+			children = (
+				62AA937C2643292A00BC7FDF /* PAYTransactionType.swift */,
+				62AA937D2643292A00BC7FDF /* PAYCOFType.swift */,
+			);
+			path = "Public Enums";
+			sourceTree = "<group>";
+		};
+		62AA937F2643292A00BC7FDF /* Fields */ = {
+			isa = PBXGroup;
+			children = (
+				6287571A26F8DAA800F87FAE /* PAYPhoneField */,
+				62AA93802643292A00BC7FDF /* PAYCVVField */,
+				62AA93822643292A00BC7FDF /* PAYCardHolderField */,
+				62AA93842643292A00BC7FDF /* PAYCountryField */,
+				62AA93862643292A00BC7FDF /* PAYEmailField */,
+				62AA93882643292A00BC7FDF /* PAYTextField */,
+				62AA938A2643292A00BC7FDF /* PAYCardNumberField */,
+				62AA938C2643292A00BC7FDF /* PAYExpiredDateField */,
+				62AA938E2643292A00BC7FDF /* PAYNameField */,
+				6213807526F7CFB400FBDCF6 /* PAYAddressField */,
+				6213807726F7D01100FBDCF6 /* PAYCityField */,
+				6213807626F7D00400FBDCF6 /* PAYZipField */,
+			);
+			path = Fields;
+			sourceTree = "<group>";
+		};
+		62AA93802643292A00BC7FDF /* PAYCVVField */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93812643292A00BC7FDF /* PAYCVVField.swift */,
+			);
+			path = PAYCVVField;
+			sourceTree = "<group>";
+		};
+		62AA93822643292A00BC7FDF /* PAYCardHolderField */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93832643292A00BC7FDF /* PAYCardHolderField.swift */,
+			);
+			path = PAYCardHolderField;
+			sourceTree = "<group>";
+		};
+		62AA93842643292A00BC7FDF /* PAYCountryField */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93852643292A00BC7FDF /* PAYCountryField.swift */,
+			);
+			path = PAYCountryField;
+			sourceTree = "<group>";
+		};
+		62AA93862643292A00BC7FDF /* PAYEmailField */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93872643292A00BC7FDF /* PAYEmailField.swift */,
+			);
+			path = PAYEmailField;
+			sourceTree = "<group>";
+		};
+		62AA93882643292A00BC7FDF /* PAYTextField */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93892643292A00BC7FDF /* PAYTextField.swift */,
+			);
+			path = PAYTextField;
+			sourceTree = "<group>";
+		};
+		62AA938A2643292A00BC7FDF /* PAYCardNumberField */ = {
+			isa = PBXGroup;
+			children = (
+				62AA938B2643292A00BC7FDF /* PAYCardNumberField.swift */,
+			);
+			path = PAYCardNumberField;
+			sourceTree = "<group>";
+		};
+		62AA938C2643292A00BC7FDF /* PAYExpiredDateField */ = {
+			isa = PBXGroup;
+			children = (
+				62AA938D2643292A00BC7FDF /* PAYExpiredDateField.swift */,
+			);
+			path = PAYExpiredDateField;
+			sourceTree = "<group>";
+		};
+		62AA938E2643292A00BC7FDF /* PAYNameField */ = {
+			isa = PBXGroup;
+			children = (
+				62AA938F2643292A00BC7FDF /* PAYNameField.swift */,
+			);
+			path = PAYNameField;
+			sourceTree = "<group>";
+		};
+		62AA93902643292A00BC7FDF /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93912643292A00BC7FDF /* PAYParserError */,
+				62AA93932643292A00BC7FDF /* PAYNetworkError */,
+				62AA93952643292A00BC7FDF /* PAYPaymentControllerError */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		62AA93912643292A00BC7FDF /* PAYParserError */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93922643292A00BC7FDF /* PAYParserError.swift */,
+			);
+			path = PAYParserError;
+			sourceTree = "<group>";
+		};
+		62AA93932643292A00BC7FDF /* PAYNetworkError */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93942643292A00BC7FDF /* PAYNetworkError.swift */,
+			);
+			path = PAYNetworkError;
+			sourceTree = "<group>";
+		};
+		62AA93952643292A00BC7FDF /* PAYPaymentControllerError */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93962643292A00BC7FDF /* PAYPaymentControllerError.swift */,
+			);
+			path = PAYPaymentControllerError;
+			sourceTree = "<group>";
+		};
+		62AA93972643292A00BC7FDF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93982643292A00BC7FDF /* PAYPaymentViewController */,
+				62AA939A2643292B00BC7FDF /* PAYWebViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		62AA93982643292A00BC7FDF /* PAYPaymentViewController */ = {
+			isa = PBXGroup;
+			children = (
+				62AA93992643292A00BC7FDF /* PAYPaymentViewController.swift */,
+			);
+			path = PAYPaymentViewController;
+			sourceTree = "<group>";
+		};
+		62AA939A2643292B00BC7FDF /* PAYWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				62AA939B2643292B00BC7FDF /* PAYWebViewController.swift */,
+			);
+			path = PAYWebViewController;
+			sourceTree = "<group>";
+		};
+		D7F4F9A12566CF96005DE0D1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D7F4F9A22566CF96005DE0D1 /* Images */,
+				D7F4F9AF2566CF96005DE0D1 /* Localization */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D7F4F9A22566CF96005DE0D1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				624C1B6C263160100045E3EA /* CardLogos */,
+				624C1B6B26315FFB0045E3EA /* UIElements */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		D7F4F9AF2566CF96005DE0D1 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				D7F4F9B02566CF96005DE0D1 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		D7F852BC255980C00016EFFF = {
+			isa = PBXGroup;
+			children = (
+				D7F852C8255980C00016EFFF /* MaxpayPaymentSdk */,
+				D7F852C7255980C00016EFFF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7F852C7255980C00016EFFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7F852C6255980C00016EFFF /* MaxpayPaymentSdk.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7F852C8255980C00016EFFF /* MaxpayPaymentSdk */ = {
+			isa = PBXGroup;
+			children = (
+				62AA934C2643292900BC7FDF /* Services */,
+				62AA931D2643292900BC7FDF /* Extensions */,
+				62AA93302643292900BC7FDF /* Models */,
+				D7F4F9A12566CF96005DE0D1 /* Resources */,
+				62AA935A2643292A00BC7FDF /* Types */,
+				62AA93972643292A00BC7FDF /* ViewControllers */,
+				D7F852CA255980C00016EFFF /* Info.plist */,
+				D7F852C9255980C00016EFFF /* Maxpay.h */,
+			);
+			path = MaxpayPaymentSdk;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D7F852C1255980C00016EFFF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7F852D7255980C00016EFFF /* Maxpay.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D7F852C5255980C00016EFFF /* MaxpayPaymentSdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7F852DA255980C00016EFFF /* Build configuration list for PBXNativeTarget "MaxpayPaymentSdk" */;
+			buildPhases = (
+				D7F852C1255980C00016EFFF /* Headers */,
+				D7F852C2255980C00016EFFF /* Sources */,
+				D7F852C3255980C00016EFFF /* Frameworks */,
+				D7F852C4255980C00016EFFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaxpayPaymentSdk;
+			productName = Maxpay;
+			productReference = D7F852C6255980C00016EFFF /* MaxpayPaymentSdk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7F852BD255980C00016EFFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = Maxpay;
+				TargetAttributes = {
+					D7F852C5255980C00016EFFF = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = D7F852C0255980C00016EFFF /* Build configuration list for PBXProject "MaxpayPaymentSdk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+				nb,
+				es,
+				da,
+				it,
+				sv,
+				"en-IE",
+				tr,
+				pl,
+				lt,
+				ru,
+				fr,
+				fi,
+				nl,
+				"pt-PT",
+				"da-DK",
+			);
+			mainGroup = D7F852BC255980C00016EFFF;
+			productRefGroup = D7F852C7255980C00016EFFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7F852C5255980C00016EFFF /* MaxpayPaymentSdk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7F852C4255980C00016EFFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62E54BCC26F78B2B00834B7F /* dankort_card_icon.png in Resources */,
+				D7F4FA232566CF97005DE0D1 /* noname_card_icon@2x.png in Resources */,
+				624C1B742631602A0045E3EA /* discover_card_icon.png in Resources */,
+				D7F4FA1C2566CF96005DE0D1 /* white_checkmark_icon@2x.png in Resources */,
+				D7F4FA1A2566CF96005DE0D1 /* white_checkmark_icon.png in Resources */,
+				62AA93CD2643292B00BC7FDF /* PAYBillingView.xib in Resources */,
+				62E54BCD26F78B2B00834B7F /* jcb_card_icon.png in Resources */,
+				624C1B772631602A0045E3EA /* amex_card_icon.png in Resources */,
+				D7F4FA212566CF97005DE0D1 /* noname_card_icon@3x.png in Resources */,
+				62AA93C22643292B00BC7FDF /* PAYDatePickerView.xib in Resources */,
+				624C1B782631602A0045E3EA /* visa_card_icon.png in Resources */,
+				D7F4FA1F2566CF96005DE0D1 /* white_checkmark_icon@3x.png in Resources */,
+				624C1B732631602A0045E3EA /* maestro_card_icon.png in Resources */,
+				62AA93C82643292B00BC7FDF /* PAYInputCardView.xib in Resources */,
+				62AA93C92643292B00BC7FDF /* PAYConditionsView.xib in Resources */,
+				624C1B752631602A0045E3EA /* diners_club_card_icon.png in Resources */,
+				62AA93BF2643292B00BC7FDF /* PAYCheckboxView.xib in Resources */,
+				624C1B762631602A0045E3EA /* mastercard_card_icon.png in Resources */,
+				D7F4FA252566CF97005DE0D1 /* Localizable.strings in Resources */,
+				62AA93C52643292B00BC7FDF /* PAYPaymentRootView.xib in Resources */,
+				D7F4FA192566CF96005DE0D1 /* noname_card_icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7F852C2255980C00016EFFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62AA93B32643292B00BC7FDF /* PAYMerchant.swift in Sources */,
+				62AA939D2643292B00BC7FDF /* UIView+Extensions.swift in Sources */,
+				62AA93BA2643292B00BC7FDF /* PAYCardTypeDetector.swift in Sources */,
+				62AA93DC2643292B00BC7FDF /* PAYNameField.swift in Sources */,
+				62AA93B02643292B00BC7FDF /* PAYCheckboxConfiguration.swift in Sources */,
+				62AA93CC2643292B00BC7FDF /* PAYBaseView.swift in Sources */,
+				62AA93D82643292B00BC7FDF /* PAYEmailField.swift in Sources */,
+				62AA93C02643292B00BC7FDF /* PAYCheckboxView.swift in Sources */,
+				62AA93B42643292B00BC7FDF /* PAYOrder.swift in Sources */,
+				62AA93B62643292B00BC7FDF /* PAYTheme.swift in Sources */,
+				62AA93B52643292B00BC7FDF /* PAYTransactionResponse.swift in Sources */,
+				62AA93D32643292B00BC7FDF /* PAYCOFType.swift in Sources */,
+				62AA93DD2643292B00BC7FDF /* PAYParserError.swift in Sources */,
+				6213807D26F7D07F00FBDCF6 /* PAYZipField.swift in Sources */,
+				62AA93D72643292B00BC7FDF /* PAYCountryField.swift in Sources */,
+				62AA93DE2643292B00BC7FDF /* PAYNetworkError.swift in Sources */,
+				62AA93B22643292B00BC7FDF /* PAYCustomer.swift in Sources */,
+				62AA93C12643292B00BC7FDF /* PAYDatePickerView.swift in Sources */,
+				62AA93C62643292B00BC7FDF /* PAYPaymentRootView.swift in Sources */,
+				62AA93AE2643292B00BC7FDF /* PAYTransactionRequest.swift in Sources */,
+				62AA93A12643292B00BC7FDF /* Array+Extensions.swift in Sources */,
+				62AA93D62643292B00BC7FDF /* PAYCardHolderField.swift in Sources */,
+				62AA93C32643292B00BC7FDF /* PAYLockView.swift in Sources */,
+				62AA93D12643292B00BC7FDF /* PAYHTTPMethodType.swift in Sources */,
+				62AA939E2643292B00BC7FDF /* UIFont+Extensions.swift in Sources */,
+				62AA93A02643292B00BC7FDF /* UIImage+Extensions.swift in Sources */,
+				6246D4C52643E77D008AC86F /* PAYIPAddressProvider.swift in Sources */,
+				62AA93B92643292B00BC7FDF /* PAYKeyboardService.swift in Sources */,
+				62AA93A82643292B00BC7FDF /* DateFormatter.swift in Sources */,
+				62AA93D92643292B00BC7FDF /* PAYTextField.swift in Sources */,
+				62AA93DB2643292B00BC7FDF /* PAYExpiredDateField.swift in Sources */,
+				62AA93DA2643292B00BC7FDF /* PAYCardNumberField.swift in Sources */,
+				62AA93D52643292B00BC7FDF /* PAYCVVField.swift in Sources */,
+				6260651526448FAF00A76693 /* PAYInitInfo.swift in Sources */,
+				62AA93BC2643292B00BC7FDF /* PAYNetworkAPI.swift in Sources */,
+				6260650E26448F8800A76693 /* PAYPaymentInfo.swift in Sources */,
+				62AA93C42643292B00BC7FDF /* PAYCustomTextView.swift in Sources */,
+				6213807926F7D06500FBDCF6 /* PAYAddressField.swift in Sources */,
+				62AA93E02643292B00BC7FDF /* PAYPaymentViewController.swift in Sources */,
+				62AA93CB2643292B00BC7FDF /* PAYNibLoadableView.swift in Sources */,
+				62AA93A22643292B00BC7FDF /* Int+Extensions.swift in Sources */,
+				62AA93BE2643292B00BC7FDF /* PAYBundleLocator.swift in Sources */,
+				62AA939C2643292B00BC7FDF /* UIViewController+Extensions.swift in Sources */,
+				62AA93BD2643292B00BC7FDF /* PAYL10nService.swift in Sources */,
+				62AA93AA2643292B00BC7FDF /* Encodable+Extensions.swift in Sources */,
+				62AA93A32643292B00BC7FDF /* NumberFormatter+Extensions.swift in Sources */,
+				62AA93AC2643292B00BC7FDF /* PAYCardInfo.swift in Sources */,
+				62AA93B82643292B00BC7FDF /* PAYFieldStateObserver.swift in Sources */,
+				62AA93D22643292B00BC7FDF /* PAYTransactionType.swift in Sources */,
+				6260651A26448FCE00A76693 /* PAYCallback.swift in Sources */,
+				62AA93AB2643292B00BC7FDF /* PAYSignatureInfo.swift in Sources */,
+				62AA93AF2643292B00BC7FDF /* PAYCard.swift in Sources */,
+				62AA939F2643292B00BC7FDF /* UIColor+Extensions.swift in Sources */,
+				62AA93CE2643292B00BC7FDF /* PAYBillingView.swift in Sources */,
+				62AA93CA2643292B00BC7FDF /* PAYConditionsView.swift in Sources */,
+				62AA93BB2643292B00BC7FDF /* PAYNetworkService.swift in Sources */,
+				62AA93C72643292B00BC7FDF /* PAYInputCardView.swift in Sources */,
+				62AA93B72643292B00BC7FDF /* PAYPAYAvailableFields.swift in Sources */,
+				62AA93A62643292B00BC7FDF /* Data+Extension.swift in Sources */,
+				62AA93B12643292B00BC7FDF /* PAYPaymentConfiguration.swift in Sources */,
+				6213807B26F7D07300FBDCF6 /* PAYCityField.swift in Sources */,
+				62AA93A92643292B00BC7FDF /* Float+Extensions.swift in Sources */,
+				62AA93AD2643292B00BC7FDF /* PAYAuth3DConfirm.swift in Sources */,
+				62AA93DF2643292B00BC7FDF /* PAYPaymentControllerError.swift in Sources */,
+				62AA93A52643292B00BC7FDF /* String+Extension.swift in Sources */,
+				62AA93A42643292B00BC7FDF /* CharacterSet+Extensions.swift in Sources */,
+				62AA93E12643292B00BC7FDF /* PAYWebViewController.swift in Sources */,
+				62AA93D02643292B00BC7FDF /* PAYCardType.swift in Sources */,
+				6287571C26F8DAC800F87FAE /* PAYPhoneField.swift in Sources */,
+				62AA93A72643292B00BC7FDF /* Dictionary+Extensions.swift in Sources */,
+				62AA93CF2643292B00BC7FDF /* PAYL10nKey.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D7F4F9B02566CF96005DE0D1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7F4F9B12566CF96005DE0D1 /* de */,
+				D7F4F9B22566CF96005DE0D1 /* en */,
+				D7F4F9B32566CF96005DE0D1 /* nb */,
+				D7F4F9B42566CF96005DE0D1 /* es */,
+				D7F4F9B52566CF96005DE0D1 /* da */,
+				D7F4F9B62566CF96005DE0D1 /* it */,
+				D7F4F9B72566CF96005DE0D1 /* sv */,
+				D7F4F9B82566CF96005DE0D1 /* en-IE */,
+				D7F4F9B92566CF96005DE0D1 /* tr */,
+				D7F4F9BA2566CF96005DE0D1 /* pl */,
+				D7F4F9BB2566CF96005DE0D1 /* lt */,
+				D7F4F9BC2566CF96005DE0D1 /* ru */,
+				D7F4F9BD2566CF96005DE0D1 /* fr */,
+				D7F4F9BE2566CF96005DE0D1 /* fi */,
+				D7F4F9BF2566CF96005DE0D1 /* nl */,
+				D7F4F9C02566CF96005DE0D1 /* pt-PT */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7F852D8255980C00016EFFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D7F852D9255980C00016EFFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D7F852DB255980C00016EFFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MaxpayPaymentSdk/Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxpay.sdk.payment;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = NO;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D7F852DC255980C00016EFFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MaxpayPaymentSdk/Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxpay.sdk.payment;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = NO;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7F852C0255980C00016EFFF /* Build configuration list for PBXProject "MaxpayPaymentSdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7F852D8255980C00016EFFF /* Debug */,
+				D7F852D9255980C00016EFFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7F852DA255980C00016EFFF /* Build configuration list for PBXNativeTarget "MaxpayPaymentSdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7F852DB255980C00016EFFF /* Debug */,
+				D7F852DC255980C00016EFFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7F852BD255980C00016EFFF /* Project object */;
+}

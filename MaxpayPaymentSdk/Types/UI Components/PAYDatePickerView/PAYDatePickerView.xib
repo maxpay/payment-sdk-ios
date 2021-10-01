@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PAYDatePickerView" customModule="Maxpay" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelButton" destination="xkv-4y-jbo" id="aBq-hA-cZ1"/>
+                <outlet property="datePicker" destination="OmN-fM-tRm" id="0B6-df-Zdk"/>
+                <outlet property="okButton" destination="dbx-2o-caV" id="1j8-3P-dKg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ttq-fo-hJ7">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="onCancel:" destination="-1" eventType="touchUpInside" id="3wR-mw-bOC"/>
+                    </connections>
+                </button>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KLf-K5-wbd">
+                    <rect key="frame" x="47" y="315" width="320" height="266"/>
+                    <subviews>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="OmN-fM-tRm">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="216" id="MbO-ME-3TL"/>
+                            </constraints>
+                        </datePicker>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BHy-lU-pzN">
+                            <rect key="frame" x="0.0" y="216" width="320" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkv-4y-jbo">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                    <state key="normal" title="Cancel"/>
+                                    <connections>
+                                        <action selector="onCancel:" destination="-1" eventType="touchUpInside" id="Uea-Ev-WD2"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbx-2o-caV">
+                                    <rect key="frame" x="170" y="0.0" width="150" height="50"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="OK"/>
+                                    <connections>
+                                        <action selector="onOK:" destination="-1" eventType="touchUpInside" id="NHa-kk-kD4"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="BHy-lU-pzN" secondAttribute="bottom" id="0g8-UK-Tfl"/>
+                        <constraint firstAttribute="trailing" secondItem="BHy-lU-pzN" secondAttribute="trailing" id="6Ag-De-xmD"/>
+                        <constraint firstItem="OmN-fM-tRm" firstAttribute="leading" secondItem="KLf-K5-wbd" secondAttribute="leading" id="76y-jc-8gn"/>
+                        <constraint firstAttribute="height" constant="266" id="Ah6-jU-v35"/>
+                        <constraint firstItem="BHy-lU-pzN" firstAttribute="top" secondItem="OmN-fM-tRm" secondAttribute="bottom" id="WF1-h7-8lr"/>
+                        <constraint firstItem="BHy-lU-pzN" firstAttribute="leading" secondItem="KLf-K5-wbd" secondAttribute="leading" id="aWU-Og-IPd"/>
+                        <constraint firstAttribute="trailing" secondItem="OmN-fM-tRm" secondAttribute="trailing" id="heP-Kz-0os"/>
+                        <constraint firstItem="OmN-fM-tRm" firstAttribute="top" secondItem="KLf-K5-wbd" secondAttribute="top" id="qia-yF-XAv"/>
+                        <constraint firstAttribute="width" constant="320" id="rIP-A2-lga"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="pay_cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Ttq-fo-hJ7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1V6-VU-phw"/>
+                <constraint firstItem="Ttq-fo-hJ7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Vww-zl-uVg"/>
+                <constraint firstItem="Ttq-fo-hJ7" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="haW-PB-Bxu"/>
+                <constraint firstItem="KLf-K5-wbd" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="kdq-S7-43u"/>
+                <constraint firstItem="KLf-K5-wbd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="uCR-vQ-fQ8"/>
+                <constraint firstAttribute="trailing" secondItem="Ttq-fo-hJ7" secondAttribute="trailing" id="vde-8I-SR1"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="79.6875"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

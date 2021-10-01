@@ -1,0 +1,46 @@
+
+
+"payment_screen_title" = "Lisää kortti";
+
+"payment_amount" = "Maksettavaa:";
+"payment_email_title" = "Sähköpostiosoite";
+"payment_email_placeholder" = "youremail@gmail.com";
+
+"payment_cardnumber_title" = "Kortin numero";
+"payment_cardnumber_placeholder" = "1234567891234567";
+"payment_expired_title" = "Viimeinen käyttöpäivä";
+"payment_expired_placeholder" = "KK/VV";
+"payment_birthday_title" = "Syntymäaika";
+"payment_cvv_title" = "CVV/CVC";
+"payment_cvv_placeholder" = " 123";
+"payment_cardholder_title" = "Kortinhaltijan nimi";
+"payment_cardholder_placeholder" = "Kortinhaltijan nimi";
+
+"payment_billing_firstname_title" = "Etunimi";
+"payment_billing_firstname_placeholder" = "Etunimi";
+"payment_billing_lastname_title" = "Sukunimi";
+"payment_billing_lastname_placeholder" = "Sukunimi";
+"payment_billing_phone_title" = "Puhelin";
+"payment_billing_phone_placeholder" = "Puhelin";
+"payment_billing_address_title" = "Osoite";
+"payment_billing_address_placeholder" = "Osoite";
+"payment_billing_city_title" = "Kaupunki";
+"payment_billing_city_placeholder" = "Kaupunki";
+"payment_billing_zip_title" = "Postinumero";
+"payment_billing_zip_placeholder" = "Postinumero";
+"payment_billing_state_title" = "State";
+"payment_billing_state_placeholder" = "State";
+"payment_billing_country_title" = "Maa";
+"payment_billing_country_placeholder" = "Maa";
+
+"terms_key" = "käyttöehtomme";
+"privacy_key" = "yksityisyydensuojakäytäntömme";
+"maxpay_key" = "Maxpay";
+
+"payment_autodebit_confirmation" = "Vahvistan, että kortiltani voidaan veloittaa automaattinen suoritus, mikäli ostan uuden tuotteen tai mikäli tilaus tulee vastaan";
+"payment_terms_and_privacy_confirmation" = "Napauttamalla Maksa hyväksyt käyttöehtomme ja yksityisyydensuojakäytäntömme ja vahvistat, että olet lukenut ne huolellisesti ja ymmärrät täysin niiden ehdot. Voit saada sähköposti-ilmoituksia osoitteesta Maxpay, ja voit lopettaa niiden vastaanottamisen milloin haluat.";
+
+"payment_pay_button_title" = "Maksa nyt";
+
+"payment_message_ok" = "OK";
+"payment_message_cancel" = "Kumoa";

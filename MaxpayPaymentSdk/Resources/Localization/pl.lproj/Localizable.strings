@@ -1,0 +1,45 @@
+
+"payment_screen_title" = "Dodaj kartę";
+
+"payment_amount" = "Kwota do zapłacenia:";
+"payment_email_title" = "Adres e-mail";
+"payment_email_placeholder" = "youremail@gmail.com";
+
+"payment_cardnumber_title" = "Numer Karty";
+"payment_cardnumber_placeholder" = "1234567891234567";
+"payment_expired_title" = "Termin ważności";
+"payment_expired_placeholder" = "MM/RR";
+"payment_birthday_title" = "Data urodzenia";
+"payment_cvv_title" = "CVV/CVC";
+"payment_cvv_placeholder" = " 123";
+"payment_cardholder_title" = "Imię właściciela karty";
+"payment_cardholder_placeholder" = "Imię właściciela karty";
+
+"payment_billing_firstname_title" = "Imię";
+"payment_billing_firstname_placeholder" = "Imię";
+"payment_billing_lastname_title" = "Nazwisko";
+"payment_billing_lastname_placeholder" = "Nazwisko";
+"payment_billing_phone_title" = "Telefon";
+"payment_billing_phone_placeholder" = "Telefon";
+"payment_billing_address_title" = "Adres";
+"payment_billing_address_placeholder" = "Adres";
+"payment_billing_city_title" = "Miasto";
+"payment_billing_city_placeholder" = "Miasto";
+"payment_billing_zip_title" = "Kod pocztowy";
+"payment_billing_zip_placeholder" = "Kod pocztowy";
+"payment_billing_state_title" = "State";
+"payment_billing_state_placeholder" = "State";
+"payment_billing_country_title" = "Kraj";
+"payment_billing_country_placeholder" = "Kraj";
+
+"terms_key" = "Warunki użytkowania";
+"privacy_key" = "Politykę prywatności";
+"maxpay_key" = "Maxpay";
+
+"payment_terms_and_privacy_confirmation" = "Klikając „Zapłać”, zgadzasz się na nasze Warunki użytkowania i Politykę prywatności oraz potwierdzasz, że je uważnie przeczytałeś i w pełni zrozumiałeś ich postanowienia. Możesz otrzymywać powiadomienia od Maxpay, ale w każdej chwili można z tego zrezygnować.";
+"payment_autodebit_confirmation" = "Potwierdzam, że moja karta może być automatycznie obciążona, jeśli kupuję nowy produkt lub jeśli jest wymagana opłata subskrypcyjna";
+
+"payment_pay_button_title" = "Zapłać teraz";
+
+"payment_message_ok" = "OK";
+"payment_message_cancel" = "Anuluj";

@@ -1,0 +1,47 @@
+
+
+"payment_screen_title" = "Tilføj kort";
+
+"payment_amount" = "Beløb at betale:";
+"payment_email_title" = "E-mailadress";
+"payment_email_placeholder" = "youremail@gmail.com";
+
+"payment_cardnumber_title" = "Kortnummer";
+"payment_cardnumber_placeholder" = "1234567891234567";
+"payment_expired_title" = "Expiration Date";
+"payment_expired_placeholder" = "MM/ÅÅ";
+"payment_birthday_title" = "Fødselsdato";
+"payment_cvv_title" = "CVV/CVC";
+"payment_cvv_placeholder" = " 123";
+"payment_cardholder_title" = "Kortholders navn";
+"payment_cardholder_placeholder" = "Kortholders navn";
+
+"payment_billing_firstname_title" = "Fornavn";
+"payment_billing_firstname_placeholder" = "Fornavn";
+"payment_billing_lastname_title" = "Efternavn";
+"payment_billing_lastname_placeholder" = "Efternavn";
+"payment_billing_phone_title" = "Telefon";
+"payment_billing_phone_placeholder" = "Telefon";
+"payment_billing_address_title" = "Adresse";
+"payment_billing_address_placeholder" = "Adresse";
+"payment_billing_city_title" = "By";
+"payment_billing_city_placeholder" = "By";
+"payment_billing_zip_title" = "Postnummer";
+"payment_billing_zip_placeholder" = "Postnummer";
+"payment_billing_state_title" = "State";
+"payment_billing_state_placeholder" = "State";
+"payment_billing_country_title" = "Land";
+"payment_billing_country_placeholder" = "Land";
+
+"terms_key" = "Regler for brug";
+"privacy_key" = "Fortrolighedspolitik";
+"maxpay_key" = "Maxpay";
+
+"payment_terms_and_privacy_confirmation" = "Ved at klikke på Betal accepterer du vores Regler for brug samt Fortrolighedspolitik og bekræfter, at du har læst dem omhyggeligt og fuldt ud forstår bestemmelserne. Du kan modtage meddelelser fra Maxpay og kan fravælge dette til enhver tid.";
+
+"payment_autodebit_confirmation" = "Jeg bekræfter, at automatisk debit må trækkes fra mit kort, hvis jeg køber nyt produkt, eller hvis en abonnementsbetaling kræves";
+
+"payment_pay_button_title" = "Betal nu";
+
+"payment_message_ok" = "OK";
+"payment_message_cancel" = "Afbestille";

@@ -1,0 +1,47 @@
+
+"payment_screen_title" = "Kart ekle";
+
+"payment_amount" = "Ödenecek tutar:";
+
+"payment_email_title" = "E-posta adresi";
+"payment_email_placeholder" = "yourmail@gmail.com";
+
+"payment_cardnumber_title" = "Kart Numarası";
+"payment_cardnumber_placeholder" = "1234567891234567";
+"payment_expired_title" = "Son kullanma tarihi";
+"payment_expired_placeholder" = "AA/YY";
+"payment_birthday_title" = "Doğum tarihi";
+"payment_cvv_title" = "CVV/CVC";
+"payment_cvv_placeholder" = " 123";
+"payment_cardholder_title" = "Kart sahibinin adı";
+"payment_cardholder_placeholder" = "Kart sahibinin adı";
+
+"payment_billing_firstname_title" = "İsim";
+"payment_billing_firstname_placeholder" = "İsim";
+"payment_billing_lastname_title" = "Soyadı";
+"payment_billing_lastname_placeholder" = "Soyadı";
+"payment_billing_phone_title" = "Telefon";
+"payment_billing_phone_placeholder" = "Telefon";
+"payment_billing_address_title" = "Adres";
+"payment_billing_address_placeholder" = "Adres";
+"payment_billing_city_title" = "Şehir";
+"payment_billing_city_placeholder" = "Şehir";
+"payment_billing_zip_title" = "Posta kodu";
+"payment_billing_zip_placeholder" = "Posta kodu";
+"payment_billing_state_title" = "State";
+"payment_billing_state_placeholder" = "State";
+"payment_billing_country_title" = "Ülke";
+"payment_billing_country_placeholder" = "Ülke";
+
+"terms_key" = "Kullanım Şartlarımızı";
+"privacy_key" = "Gizlilik Politikamızı";
+"maxpay_key" = "Maxpay";
+
+"payment_terms_and_privacy_confirmation" = "Öde ibaresini tıklamakla Kullanım Şartlarımızı ve Gizlilik Politikamızı kabul etmiş ve bunları dikkatlice okuyarak hükümlerini tamamen anladığınızı teyit etmiş oluyorsunuz. Maxpay e-posta adresinden uyarı e-postaları alabilir ve dilediğinizde çıkış tercihinde bulunabilirsiniz.";
+
+"payment_autodebit_confirmation" = "Yeni ürün aldığımda veya abonelik ödemesi gerektiğinde kartımdan otomatik olarak düşülebileceğini teyit ediyorum";
+
+"payment_pay_button_title" = "Hemen Öde";
+
+"payment_message_ok" = "OK";
+"payment_message_cancel" = "Vazgeç";

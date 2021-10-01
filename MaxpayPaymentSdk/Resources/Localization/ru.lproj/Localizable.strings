@@ -1,0 +1,48 @@
+
+"payment_screen_title" = "Добавить карту";
+
+"payment_amount" = "Сумма для оплаты:";
+
+"payment_email_title" = "Электронная почта";
+"payment_email_placeholder" = "youremail@gmail.com";
+
+"payment_cardnumber_title" = "Номер карты";
+"payment_cardnumber_placeholder" = "1234567891234567";
+"payment_expired_title" = "Срок действия";
+"payment_expired_placeholder" = "MM/ГГ";
+"payment_birthday_title" = "Дата рождения";
+"payment_cvv_title" = "CVV/CVC";
+"payment_cvv_placeholder" = " 123";
+"payment_cardholder_title" = "Имя владельца карты";
+"payment_cardholder_placeholder" = "Имя владельца карты";
+
+"payment_billing_name_title" = "Имя";
+"payment_billing_firstname_title" = "Имя";
+"payment_billing_firstname_placeholder" = "Имя";
+"payment_billing_lastname_title" = "Фамилия";
+"payment_billing_lastname_placeholder" = "Фамилия";
+"payment_billing_phone_title" = "Телефон";
+"payment_billing_phone_placeholder" = "Телефон";
+"payment_billing_address_title" = "Адрес";
+"payment_billing_address_placeholder" = "Адрес";
+"payment_billing_city_title" = "Город";
+"payment_billing_city_placeholder" = "Город";
+"payment_billing_zip_title" = "Индекс";
+"payment_billing_zip_placeholder" = "Индекс";
+"payment_billing_state_title" = "State";
+"payment_billing_state_placeholder" = "State";
+"payment_billing_country_title" = "Страна";
+"payment_billing_country_placeholder" = "Страна";
+
+"terms_key" = "Условиями использования";
+"privacy_key" = "Политикой конфиденциальности";
+"maxpay_key" = "Maxpay";
+
+"payment_terms_and_privacy_confirmation" = "Нажимая «Оплатить», вы соглашаетесь с нашими Условиями использования и Политикой конфиденциальности и подтверждаете, что внимательно прочитали и полностью поняли их положения. Вы можете получать уведомления по электронной почте от Maxpay и можете отказаться от рассылки в любое время.";
+
+"payment_autodebit_confirmation" = "Я даю согласие на списание средств со своей карты в случаях покупки нового продукта или при истечении срока подписки на текущий продукт";
+
+"payment_pay_button_title" = "Оплатить";
+
+"payment_message_ok" = "OK";
+"payment_message_cancel" = "Отменить";

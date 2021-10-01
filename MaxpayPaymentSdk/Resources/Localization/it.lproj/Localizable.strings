@@ -1,0 +1,46 @@
+
+
+"payment_screen_title" = "Aggiungi carta";
+
+"payment_amount" = "Importo da pagare:";
+"payment_email_title" = "Indirizzo email";
+"payment_email_placeholder" = "youremail@gmail.com";
+
+"payment_cardnumber_title" = "Numero di carta";
+"payment_cardnumber_placeholder" = "1234567891234567";
+"payment_expired_title" = "Data di scadenza";
+"payment_expired_placeholder" = "MM/YY";
+"payment_birthday_title" = "Data di nascita";
+"payment_cvv_title" = "CVV/CVC";
+"payment_cvv_placeholder" = " 123";
+"payment_cardholder_title" = "Nome del titolare";
+"payment_cardholder_placeholder" = "Full Name";
+
+"payment_billing_firstname_title" = "Nome di battesimo";
+"payment_billing_firstname_placeholder" = "Nome di battesimo";
+"payment_billing_lastname_title" = "Cognome";
+"payment_billing_lastname_placeholder" = "Cognome";
+"payment_billing_phone_title" = "Telefono";
+"payment_billing_phone_placeholder" = "Telefono";
+"payment_billing_address_title" = "Indirizzo";
+"payment_billing_address_placeholder" = "Indirizzo";
+"payment_billing_city_title" = "Città";
+"payment_billing_city_placeholder" = "Città";
+"payment_billing_zip_title" = "Codice postale";
+"payment_billing_zip_placeholder" = "Codice postale";
+"payment_billing_state_title" = "State";
+"payment_billing_state_placeholder" = "State";
+"payment_billing_country_title" = "Paese";
+"payment_billing_country_placeholder" = "Paese";
+
+"terms_key" = "Termini di utilizzo";
+"privacy_key" = "Politica sulla Privacy";
+"maxpay_key" = "Maxpay";
+
+"payment_autodebit_confirmation" = "Sono d`accordo a prelevare fondi dalla vostra carta in caso di acquisto di un nuovo prodotto o la scadenza del periodo di abbonamento per il prodotto corrente";
+"payment_terms_and_privacy_confirmation" = "Cliccando su Paga, accetti i nostri Termini di utilizzo e la nostra Politica sulla Privacy e confermi di aver letto attentamente e di aver compreso appieno le sue disposizioni. Potresti ricevere notifiche via email da Maxpay, che puoi annullare in qualsiasi momento";
+
+"payment_pay_button_title" = "Paga ora";
+
+"payment_message_ok" = "OK";
+"payment_message_cancel" = "Annulla";

@@ -1,0 +1,45 @@
+
+"payment_screen_title" = "Voeg een kaart toe";
+
+"payment_amount" = "Te betalen bedrag:";
+"payment_email_title" = "Emailadres";
+"payment_email_placeholder" = "youremail@gmail.com";
+
+"payment_cardnumber_title" = "Kaartnummer";
+"payment_cardnumber_placeholder" = "1234567891234567";
+"payment_expired_title" = "Uiterste houdbaarheidsdatum";
+"payment_expired_placeholder" = "MM/JJ";
+"payment_birthday_title" = "Geboortedatum";
+"payment_cvv_title" = "CVV/CVC";
+"payment_cvv_placeholder" = " 123";
+"payment_cardholder_title" = "Naam pashouder";
+"payment_cardholder_placeholder" = "Naam pashouder";
+
+"payment_billing_firstname_title" = "Voornaam";
+"payment_billing_firstname_placeholder" = "Voornaam";
+"payment_billing_lastname_title" = "Achternaam";
+"payment_billing_lastname_placeholder" = "Achternaam";
+"payment_billing_phone_title" = "Telefoon";
+"payment_billing_phone_placeholder" = "Telefoon";
+"payment_billing_address_title" = "Adres";
+"payment_billing_address_placeholder" = "Adres";
+"payment_billing_city_title" = "Stad";
+"payment_billing_city_placeholder" = "Stad";
+"payment_billing_zip_title" = "Postcode";
+"payment_billing_zip_placeholder" = "Postcode";
+"payment_billing_state_title" = "State";
+"payment_billing_state_placeholder" = "State";
+"payment_billing_country_title" = "Land";
+"payment_billing_country_placeholder" = "Land";
+
+"terms_key" = "Gebruiksvoorwaarden";
+"privacy_key" = "Privacybeleid";
+"maxpay_key" = "Maxpay";
+
+"payment_autodebit_confirmation" = "Ik bevestig dat een automatische incasso kan plaatsvinden via mijn kaart als ik een nieuw product koop of als er abonnementsgeld dient te worden betaald";
+"payment_terms_and_privacy_confirmation" = "Door op “Betalen” te klikken ga je akkoord met de Gebruiksvoorwaarden en ons Privacybeleid en bevestig je dat je ze zorgvuldig hebt gelezen en volledig begrijpt. Je kunt mogelijk emailberichten ontvangen van Maxpay maar hier kun je je op elk gewenst moment voor afmelden.";
+
+"payment_pay_button_title" = "Nu Betalen";
+
+"payment_message_ok" = "OK";
+"payment_message_cancel" = "Annuleer";

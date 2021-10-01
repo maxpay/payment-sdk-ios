@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PAYBillingView" customModule="Maxpay" customModuleProvider="target">
+            <connections>
+                <outlet property="addressContainer" destination="3wY-XM-Tjm" id="Pk3-B5-JD1"/>
+                <outlet property="addressTextField" destination="fQf-rx-H5V" id="KKe-Or-ewT"/>
+                <outlet property="addressTextFieldContainer" destination="893-9S-cFN" id="jkY-sd-WAW"/>
+                <outlet property="addressTitleLabel" destination="hgM-u7-gJm" id="aXv-HE-sKn"/>
+                <outlet property="cityContainer" destination="Omt-hp-jWJ" id="MRF-5r-8Ws"/>
+                <outlet property="cityTextField" destination="Qer-Nt-wy7" id="bUR-ac-5lZ"/>
+                <outlet property="cityTextFieldContainer" destination="1ha-Q9-DO0" id="viH-DX-oVo"/>
+                <outlet property="cityTitleLabel" destination="AJu-kw-qgC" id="xMF-Nk-jPe"/>
+                <outlet property="countryContainer" destination="vE0-0b-4jW" id="Qw3-Wm-dix"/>
+                <outlet property="countryTextField" destination="KBt-Ss-HUU" id="oiC-Wq-q4Y"/>
+                <outlet property="countryTextFieldContainer" destination="8bs-Xb-Wli" id="cYN-6Q-yar"/>
+                <outlet property="countryTitleLabel" destination="c4h-b6-U6v" id="1Et-Ww-zaX"/>
+                <outlet property="firstnameContainer" destination="pnR-W0-2An" id="8Wj-wo-vl8"/>
+                <outlet property="firstnameTextField" destination="ugb-KI-dP5" id="Ncu-sl-VAH"/>
+                <outlet property="firstnameTextFieldContainer" destination="Ma8-b4-KdV" id="gV4-OH-kH3"/>
+                <outlet property="firstnameTitleLabel" destination="Tje-fa-1ol" id="x5T-gq-7Ha"/>
+                <outlet property="lastnameContainer" destination="JIq-ya-62W" id="QqM-dA-tZz"/>
+                <outlet property="lastnameTextField" destination="OB5-6C-1uA" id="ck3-Y6-FOV"/>
+                <outlet property="lastnameTextFieldContainer" destination="WRk-li-0Sv" id="xFR-tO-B67"/>
+                <outlet property="lastnameTitleLabel" destination="1Bc-p5-iHg" id="43r-ad-61b"/>
+                <outlet property="phoneContainer" destination="lMZ-qa-HSE" id="bUL-Zf-8e7"/>
+                <outlet property="phoneTextField" destination="lAq-D3-6gH" id="lIe-CG-tPK"/>
+                <outlet property="phoneTextFieldContainer" destination="MZE-fb-HWT" id="8Wz-tb-afD"/>
+                <outlet property="phoneTitleLabel" destination="dRL-Ya-B87" id="2gT-gA-YmU"/>
+                <outlet property="stateContainer" destination="M6x-2B-emT" id="fQh-gt-Owt"/>
+                <outlet property="stateTextField" destination="aio-Vm-qpG" id="OUT-cp-llb"/>
+                <outlet property="stateTextFieldContainer" destination="dik-7M-ID4" id="zr6-eG-eut"/>
+                <outlet property="stateTitleLabel" destination="nc1-7w-LNn" id="cKw-8F-gGC"/>
+                <outlet property="zipContainer" destination="8kJ-eF-Mdq" id="llO-YY-R1x"/>
+                <outlet property="zipTextField" destination="Pfe-Oy-hEF" id="Oth-9h-nVH"/>
+                <outlet property="zipTextFieldContainer" destination="IAz-xj-CH1" id="lQe-s2-8KP"/>
+                <outlet property="zipTitleLabel" destination="Xh7-Xi-ZBp" id="cvP-KY-MqN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="783"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="ec2-pX-ht3" userLabel="Billing Address Container">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="640"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pnR-W0-2An" userLabel="First Name Container">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="76"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tje-fa-1ol">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="18"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="18" id="fzN-x0-tFK"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ma8-b4-KdV" userLabel="TextField Container">
+                                    <rect key="frame" x="0.0" y="26" width="414" height="50"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ugb-KI-dP5" customClass="PAYNameField" customModule="Maxpay" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="14" width="382" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="JHV-vl-sTI"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="1KG-Ho-AwX"/>
+                                        <constraint firstAttribute="trailing" secondItem="ugb-KI-dP5" secondAttribute="trailing" constant="16" id="AJq-ho-vvm"/>
+                                        <constraint firstItem="ugb-KI-dP5" firstAttribute="leading" secondItem="Ma8-b4-KdV" secondAttribute="leading" constant="16" id="Ily-9t-w6k"/>
+                                        <constraint firstItem="ugb-KI-dP5" firstAttribute="centerY" secondItem="Ma8-b4-KdV" secondAttribute="centerY" id="VhJ-fe-5j1"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="pay_cornerRadius">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="76" id="TQq-oK-gu7"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="JIq-ya-62W" userLabel="Last Name Container">
+                            <rect key="frame" x="0.0" y="94" width="414" height="76"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Bc-p5-iHg">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="18"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="18" id="IkI-Sm-Z35"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WRk-li-0Sv" userLabel="TextField Container">
+                                    <rect key="frame" x="0.0" y="26" width="414" height="50"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OB5-6C-1uA" customClass="PAYNameField" customModule="Maxpay" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="14" width="382" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="1m5-xr-SxN"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="5vr-my-7DG"/>
+                                        <constraint firstAttribute="trailing" secondItem="OB5-6C-1uA" secondAttribute="trailing" constant="16" id="Gmh-25-PmS"/>
+                                        <constraint firstItem="OB5-6C-1uA" firstAttribute="centerY" secondItem="WRk-li-0Sv" secondAttribute="centerY" id="WEJ-FS-INb"/>
+                                        <constraint firstItem="OB5-6C-1uA" firstAttribute="leading" secondItem="WRk-li-0Sv" secondAttribute="leading" constant="16" id="qUs-L9-xK0"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="pay_cornerRadius">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="76" id="SUN-R3-x8b"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lMZ-qa-HSE" userLabel="Phone Container">
+                            <rect key="frame" x="0.0" y="188" width="414" height="76"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRL-Ya-B87">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="18"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="18" id="RW5-4v-WfD"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MZE-fb-HWT" userLabel="TextField Container">
+                                    <rect key="frame" x="0.0" y="26" width="414" height="50"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lAq-D3-6gH" customClass="PAYPhoneField" customModule="Maxpay" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="14" width="382" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="pOz-7y-3BS"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                    <constraints>
+                                        <constraint firstItem="lAq-D3-6gH" firstAttribute="centerY" secondItem="MZE-fb-HWT" secondAttribute="centerY" id="4Ri-8n-cEs"/>
+                                        <constraint firstAttribute="height" constant="50" id="UMQ-1l-84d"/>
+                                        <constraint firstAttribute="trailing" secondItem="lAq-D3-6gH" secondAttribute="trailing" constant="16" id="csl-V1-jng"/>
+                                        <constraint firstItem="lAq-D3-6gH" firstAttribute="leading" secondItem="MZE-fb-HWT" secondAttribute="leading" constant="16" id="hUl-P4-mQK"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="pay_cornerRadius">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <viewLayoutGuide key="safeArea" id="YJf-jJ-bnr"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="76" id="4qc-5x-pq1"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3wY-XM-Tjm" userLabel="Address Container">
+                            <rect key="frame" x="0.0" y="282" width="414" height="76"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgM-u7-gJm">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="18"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="18" id="8x4-c4-p4U"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="893-9S-cFN" userLabel="TextField Container">
+                                    <rect key="frame" x="0.0" y="26" width="414" height="50"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fQf-rx-H5V" customClass="PAYAddressField" customModule="Maxpay" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="14" width="382" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="weP-SS-duX"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="VJM-aP-JfS"/>
+                                        <constraint firstItem="fQf-rx-H5V" firstAttribute="centerY" secondItem="893-9S-cFN" secondAttribute="centerY" id="Xah-Q4-qYM"/>
+                                        <constraint firstAttribute="trailing" secondItem="fQf-rx-H5V" secondAttribute="trailing" constant="16" id="dp8-AJ-oxF"/>
+                                        <constraint firstItem="fQf-rx-H5V" firstAttribute="leading" secondItem="893-9S-cFN" secondAttribute="leading" constant="16" id="nVc-dK-6cQ"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="pay_cornerRadius">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="76" id="4hB-bg-Wdk"/>
+                                <constraint firstAttribute="bottom" secondItem="893-9S-cFN" secondAttribute="bottom" id="hiZ-76-HIS"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="CdZ-Vw-ZOZ">
+                            <rect key="frame" x="0.0" y="376" width="414" height="76"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Omt-hp-jWJ" userLabel="City Container">
+                                    <rect key="frame" x="0.0" y="0.0" width="207.5" height="76"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJu-kw-qgC">
+                                            <rect key="frame" x="0.0" y="0.0" width="207.5" height="18"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="18" id="IaB-xZ-nQ9"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ha-Q9-DO0" userLabel="TextField Container">
+                                            <rect key="frame" x="0.0" y="26" width="207.5" height="50"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qer-Nt-wy7" customClass="PAYCityField" customModule="Maxpay" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="14" width="175.5" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="zCD-BF-2lb"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="AYO-kI-ajI"/>
+                                                <constraint firstItem="Qer-Nt-wy7" firstAttribute="leading" secondItem="1ha-Q9-DO0" secondAttribute="leading" constant="16" id="Z9A-ts-6Xm"/>
+                                                <constraint firstAttribute="trailing" secondItem="Qer-Nt-wy7" secondAttribute="trailing" constant="16" id="rOc-PG-osX"/>
+                                                <constraint firstItem="Qer-Nt-wy7" firstAttribute="centerY" secondItem="1ha-Q9-DO0" secondAttribute="centerY" id="xdc-PQ-GLu"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="pay_cornerRadius">
+                                                    <real key="value" value="12"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="76" id="OQg-fr-Xht"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8kJ-eF-Mdq" userLabel="Zip Container">
+                                    <rect key="frame" x="248.5" y="0.0" width="165.5" height="76"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xh7-Xi-ZBp">
+                                            <rect key="frame" x="0.0" y="0.0" width="165.5" height="18"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="18" id="tB2-Ye-m6L"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IAz-xj-CH1" userLabel="TextField Container">
+                                            <rect key="frame" x="0.0" y="26" width="165.5" height="50"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pfe-Oy-hEF" customClass="PAYZipField" customModule="Maxpay" customModuleProvider="target">
+                                                    <rect key="frame" x="16" y="14" width="133.5" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="H6r-SU-WvC"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                            <constraints>
+                                                <constraint firstItem="Pfe-Oy-hEF" firstAttribute="centerY" secondItem="IAz-xj-CH1" secondAttribute="centerY" id="CfH-TO-t5B"/>
+                                                <constraint firstAttribute="trailing" secondItem="Pfe-Oy-hEF" secondAttribute="trailing" constant="16" id="XTv-32-BI2"/>
+                                                <constraint firstAttribute="height" constant="50" id="ejz-L8-PQP"/>
+                                                <constraint firstItem="Pfe-Oy-hEF" firstAttribute="leading" secondItem="IAz-xj-CH1" secondAttribute="leading" constant="16" id="ieZ-HB-mJ8"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="pay_cornerRadius">
+                                                    <real key="value" value="12"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="76" id="kif-5q-uFL"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Omt-hp-jWJ" firstAttribute="width" relation="greaterThanOrEqual" secondItem="CdZ-Vw-ZOZ" secondAttribute="width" multiplier="0.5" id="BdJ-pT-Eez"/>
+                                <constraint firstItem="8kJ-eF-Mdq" firstAttribute="width" secondItem="CdZ-Vw-ZOZ" secondAttribute="width" multiplier="0.4" priority="999" id="gFE-ZX-Mnd"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="M6x-2B-emT" userLabel="State Container">
+                            <rect key="frame" x="0.0" y="470" width="414" height="76"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nc1-7w-LNn">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="18"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="18" id="bls-hV-6YS"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dik-7M-ID4" userLabel="TextField Container">
+                                    <rect key="frame" x="0.0" y="26" width="414" height="50"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aio-Vm-qpG">
+                                            <rect key="frame" x="16" y="14" width="382" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="iQR-lp-eW6"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                    <constraints>
+                                        <constraint firstItem="aio-Vm-qpG" firstAttribute="leading" secondItem="dik-7M-ID4" secondAttribute="leading" constant="16" id="Hy2-Ec-XgC"/>
+                                        <constraint firstAttribute="trailing" secondItem="aio-Vm-qpG" secondAttribute="trailing" constant="16" id="mLk-Yw-tIF"/>
+                                        <constraint firstAttribute="height" constant="50" id="mwK-Rg-7kf"/>
+                                        <constraint firstItem="aio-Vm-qpG" firstAttribute="centerY" secondItem="dik-7M-ID4" secondAttribute="centerY" id="wzQ-E5-KNv"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="pay_cornerRadius">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="76" id="5OJ-b2-d0z"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vE0-0b-4jW" userLabel="Country Container">
+                            <rect key="frame" x="0.0" y="564" width="414" height="76"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4h-b6-U6v">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="18"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="18" id="DzH-Ry-N6e"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bs-Xb-Wli" userLabel="TextField Container">
+                                    <rect key="frame" x="0.0" y="26" width="414" height="50"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KBt-Ss-HUU" customClass="PAYCountryField" customModule="Maxpay" customModuleProvider="target">
+                                            <rect key="frame" x="16" y="14" width="382" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="22" id="MPh-ON-wfw"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                        </textField>
+                                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Tu-IO-18j">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="ANc-SH-aVZ"/>
+                                        <constraint firstAttribute="trailing" secondItem="6Tu-IO-18j" secondAttribute="trailing" id="Ap8-Md-GoI"/>
+                                        <constraint firstItem="KBt-Ss-HUU" firstAttribute="leading" secondItem="8bs-Xb-Wli" secondAttribute="leading" constant="16" id="CCt-Tw-pG2"/>
+                                        <constraint firstItem="6Tu-IO-18j" firstAttribute="leading" secondItem="8bs-Xb-Wli" secondAttribute="leading" id="FIL-3E-wQG"/>
+                                        <constraint firstAttribute="bottom" secondItem="6Tu-IO-18j" secondAttribute="bottom" id="cRP-Dc-aR1"/>
+                                        <constraint firstItem="KBt-Ss-HUU" firstAttribute="centerY" secondItem="8bs-Xb-Wli" secondAttribute="centerY" id="mUj-cq-rjj"/>
+                                        <constraint firstItem="6Tu-IO-18j" firstAttribute="top" secondItem="8bs-Xb-Wli" secondAttribute="top" id="oVL-zh-2zc"/>
+                                        <constraint firstAttribute="trailing" secondItem="KBt-Ss-HUU" secondAttribute="trailing" constant="16" id="yK4-Gw-fNQ"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="pay_cornerRadius">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="76" id="OQz-I9-3sP"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ec2-pX-ht3" secondAttribute="trailing" id="18x-8V-fm0"/>
+                <constraint firstAttribute="bottom" secondItem="ec2-pX-ht3" secondAttribute="bottom" priority="750" id="fZD-O0-Rq7"/>
+                <constraint firstItem="ec2-pX-ht3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nNQ-tA-uav"/>
+                <constraint firstItem="ec2-pX-ht3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zxI-zQ-V4l"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="115.51339285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

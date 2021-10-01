@@ -1,0 +1,46 @@
+
+"payment_screen_title" = "Lägg till kort";
+
+"payment_amount" = "Summa att betala:";
+
+"payment_email_title" = "E-postadress";
+"payment_email_placeholder" = "youremail@gmail.com";
+
+"payment_cardnumber_title" = "Kortnummer";
+"payment_cardnumber_placeholder" = "1234567891234567";
+"payment_expired_title" = "Utgångsdatum";
+"payment_expired_placeholder" = "MM/ÅÅ";
+"payment_birthday_title" = "Födelsedatum";
+"payment_cvv_title" = "CVV/CVC";
+"payment_cvv_placeholder" = " 123";
+"payment_cardholder_title" = "Kortinnehavarens namn";
+"payment_cardholder_placeholder" = "Kortinnehavarens namn";
+
+"payment_billing_firstname_title" = "Förnamn";
+"payment_billing_firstname_placeholder" = "Förnamn";
+"payment_billing_lastname_title" = "Efternamn";
+"payment_billing_lastname_placeholder" = "Efternamn";
+"payment_billing_phone_title" = "Telefonnummer";
+"payment_billing_phone_placeholder" = "Telefonnummer";
+"payment_billing_address_title" = "Adress";
+"payment_billing_address_placeholder" = "Adress";
+"payment_billing_city_title" = "Stad";
+"payment_billing_city_placeholder" = "Stad";
+"payment_billing_zip_title" = "Postnummer";
+"payment_billing_zip_placeholder" = "Postnummer";
+"payment_billing_state_title" = "State";
+"payment_billing_state_placeholder" = "State";
+"payment_billing_country_title" = "Land";
+"payment_billing_country_placeholder" = "Land";
+
+"terms_key" = "Användarregler";
+"maxpay_key" = "Maxpay";
+"privacy_key" = "Sekretesspolicy";
+
+"payment_autodebit_confirmation" = "Jag bekräftar att mitt kort kan komma att debiteras automatiskt om jag köper en ny produkt eller en prenumerationsbetalning är begärd";
+"payment_terms_and_privacy_confirmation" = "Genom att klicka Betala, samtycker du till våra Användarregler och vår Sekretesspolicy och bekräftar att du har läst dessa noggrant och förstår dess bestämmelser fullt ut. Du kan komma att få e-postaviseringar från Maxpay och kan avbryta när du vill";
+
+"payment_pay_button_title" = "Betala nu";
+
+"payment_message_ok" = "OK";
+"payment_message_cancel" = "Avbryt";

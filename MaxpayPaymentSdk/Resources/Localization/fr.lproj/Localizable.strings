@@ -1,0 +1,46 @@
+
+
+"payment_screen_title" = "Ajouter une carte";
+
+"payment_amount" = "Montant à payer:";
+"payment_email_title" = "Adresse e-mail";
+"payment_email_placeholder" = "youremail@gmail.com";
+
+"payment_cardnumber_title" = "Numéro de carte";
+"payment_cardnumber_placeholder" = "1234567891234567";
+"payment_expired_title" = "Date d'expiration";
+"payment_expired_placeholder" = "MM/AA";
+"payment_birthday_title" = "Date de naissance";
+"payment_cvv_title" = "CVV/CVC";
+"payment_cvv_placeholder" = " 123";
+"payment_cardholder_title" = "Nom du titulaire";
+"payment_cardholder_placeholder" = "Nom du titulaire";
+
+"payment_billing_firstname_title" = "Prénom";
+"payment_billing_firstname_placeholder" = "Prénom";
+"payment_billing_lastname_title" = "Nom de famille";
+"payment_billing_lastname_placeholder" = "Nom de famille";
+"payment_billing_phone_title" = "Téléphone";
+"payment_billing_phone_placeholder" = "Téléphone";
+"payment_billing_address_title" = "Adresse";
+"payment_billing_address_placeholder" = "Adresse";
+"payment_billing_city_title" = "Ville";
+"payment_billing_city_placeholder" = "Ville";
+"payment_billing_zip_title" = "Code postal";
+"payment_billing_zip_placeholder" = "Code postal";
+"payment_billing_state_title" = "State";
+"payment_billing_state_placeholder" = "State";
+"payment_billing_country_title" = "Pays";
+"payment_billing_country_placeholder" = "Pays";
+
+"terms_key" = "Conditions d`utilisation";
+"privacy_key" = "Politique de confidentialité";
+"maxpay_key" = "Maxpay";
+
+"payment_autodebit_confirmation" = "Je vous autorise à prélever de l`argent sur ma carte bancaire en cas d`achat d`un nouveau produit ou d`expiration de la période de souscription au produit actuel";
+"payment_terms_and_privacy_confirmation" = "En cliquant sur «Payer», vous acceptez nos Conditions d`utilisation et notre Politique de confidentialité et confirmez que vous les avez lues attentivement et que vous en comprenez parfaitement les dispositions. Vous pouvez recevoir des notifications par courriel de Maxpay et pouvez vous désabonner en tout temps.";
+
+"payment_pay_button_title" = "Payez maintenant";
+
+"payment_message_ok" = "OK";
+"payment_message_cancel" = "Annuler";

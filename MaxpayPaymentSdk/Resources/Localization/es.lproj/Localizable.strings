@@ -1,0 +1,46 @@
+
+
+"payment_screen_title" = "Agregar tarjeta";
+
+"payment_amount" = "Cantidad a pagar:";
+"payment_email_title" = "Dirección de correo electrónico";
+"payment_email_placeholder" = "youremail@gmail.com";
+
+"payment_cardnumber_title" = "Número de tarjeta";
+"payment_cardnumber_placeholder" = "1234567891234567";
+"payment_expired_title" = "Fecha de caducidad";
+"payment_expired_placeholder" = "MM/AA";
+"payment_birthday_title" = "Fecha de nacimiento";
+"payment_cvv_title" = "CVV/CVC";
+"payment_cvv_placeholder" = " 123";
+"payment_cardholder_title" = "Nombre del titular de la tarjeta";
+"payment_cardholder_placeholder" = "Nombre del titular de la tarjeta";
+
+"payment_billing_firstname_title" = "Nombre propio";
+"payment_billing_firstname_placeholder" = "Nombre propio";
+"payment_billing_lastname_title" = "Apellido";
+"payment_billing_lastname_placeholder" = "Apellido";
+"payment_billing_phone_title" = "Teléfono";
+"payment_billing_phone_placeholder" = "Teléfono";
+"payment_billing_address_title" = "Dirección";
+"payment_billing_address_placeholder" = "Dirección";
+"payment_billing_city_title" = "Ciudad";
+"payment_billing_city_placeholder" = "Ciudad";
+"payment_billing_zip_title" = "Código postal";
+"payment_billing_zip_placeholder" = "Código postal";
+"payment_billing_state_title" = "State";
+"payment_billing_state_placeholder" = "State";
+"payment_billing_country_title" = "País";
+"payment_billing_country_placeholder" = "País";
+
+"terms_key" = "Términos de uso";
+"privacy_key" = "Política de Privacidad";
+"maxpay_key" = "Maxpay";
+
+"payment_terms_and_privacy_confirmation" = "Al hacer clic en Pagar, aceptas nuestros Términos de uso y Política de Privacidad, y confirmas que has leído atentamente y entiendes sus disposiciones. Puedes recibir notificaciones por correo electrónico de Maxpay de las que puedes darte de baja en cualquier momento.";
+"payment_autodebit_confirmation" = "Estoy de acuerdo en deducir de fondos de mi tarjeta en caso de compra de un nuevo producto o la expiración del período de suscripción para el producto actual";
+
+"payment_pay_button_title" = "Pague ahora";
+
+"payment_message_ok" = "OK";
+"payment_message_cancel" = "Cancelar";

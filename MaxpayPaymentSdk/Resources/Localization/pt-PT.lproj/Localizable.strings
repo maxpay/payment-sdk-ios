@@ -1,0 +1,45 @@
+
+"payment_screen_title" = "Adicionar cartão";
+
+"payment_amount" = "Valor a pagar:";
+"payment_email_title" = "Endereço de e-mail";
+"payment_email_placeholder" = "youremail@gmail.com";
+
+"payment_cardnumber_title" = "Número de Cartão";
+"payment_cardnumber_placeholder" = "1234567891234567";
+"payment_expired_title" = "Data de validade";
+"payment_expired_placeholder" = "MM/AA";
+"payment_birthday_title" = "Data de nascimento";
+"payment_cvv_title" = "CVV/CVC";
+"payment_cvv_placeholder" = " 123";
+"payment_cardholder_title" = "Nome do Titular";
+"payment_cardholder_placeholder" = "Nome do Titular";
+
+"payment_billing_firstname_title" = "Primeiro nome";
+"payment_billing_firstname_placeholder" = "Primeiro nome";
+"payment_billing_lastname_title" = "Sobrenome";
+"payment_billing_lastname_placeholder" = "Sobrenome";
+"payment_billing_phone_title" = "Telefone";
+"payment_billing_phone_placeholder" = "Telefone";
+"payment_billing_address_title" = "Endereço";
+"payment_billing_address_placeholder" = "Endereço";
+"payment_billing_city_title" = "Cidade";
+"payment_billing_city_placeholder" = "Cidade";
+"payment_billing_zip_title" = "Código postal";
+"payment_billing_zip_placeholder" = "Código postal";
+"payment_billing_state_title" = "State";
+"payment_billing_state_placeholder" = "State";
+"payment_billing_country_title" = "País";
+"payment_billing_country_placeholder" = "País";
+
+"terms_key" = "Termos de uso";
+"privacy_key" = "Política de Privacidade";
+"maxpay_key" = "Maxpay";
+
+"payment_autodebit_confirmation" = "Concordo para retirar fundos do meu cartão em caso de compra de um novo produto ou em caso de termo do período de subscrição para o produto atual.";
+"payment_terms_and_privacy_confirmation" = "Ao clicar em Pagar, você está concordando com os nossos Termos de uso e com a nossa Política de Privacidade. Também está concordando que leu com atenção e entendeu completamente o conteúdo destes dois documentos. Você receberá notificações via email enviadas por Maxpay e pode cancelar o recebimento destas mensagens a qualquer momento.";
+
+"payment_pay_button_title" = "Pague Agora";
+
+"payment_message_ok" = "OK";
+"payment_message_cancel" = "Cancelar";
