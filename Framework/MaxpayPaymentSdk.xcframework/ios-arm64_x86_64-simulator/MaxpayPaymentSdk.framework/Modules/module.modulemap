@@ -1,4 +1,0 @@
-framework module MaxpayPaymentSdk {
-  header "MaxpayPaymentSdk-Swift.h"
-  requires objc
-}

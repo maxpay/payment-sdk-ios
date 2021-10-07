@@ -1,6 +1,7 @@
 # Maxpay Payment iOS SDK
 
-The Maxpay Payment iOS SDK makes it quick and easy to build a payment screen in your iOS app. We provide customizable MXPPaymentViewController that can be used out-of-the-box.
+The Maxpay Payment iOS SDK makes it quick and easy to build a payment screen in your iOS app.
+We provide customizable PayPaymentViewController that can be used out-of-the-box.
 
 ## Content
 * [Requirements](#requirements)
@@ -9,30 +10,25 @@ The Maxpay Payment iOS SDK makes it quick and easy to build a payment screen in 
 
 
 ## Requirements
-ios10, Xcode11, Swift 4.
+iOS 13 or above
 
 ## Installation
-### 1. Clone or download repository.
 
-### 2. Open downloaded project, you should see folders with example, framework binary and source files.
-![Downloaded project](README/downloaded_project.png)
+1. If you haven’t already, install the latest version of **CocoaPods**.
 
-### 3. Create or open Xcode iOS project which will use framework.
-![New project](README/new_project.png)
+2. If you don’t have an existing **Podfile**, run the following command to create one:
+> pod init
 
-### 4. Select binary file.
-![Binary file](README/select_project.png)
+3. Add this line to your **Podfile**:
+> pod 'MaxpayPaymentSdk'
 
-### 5. In Xcode project create new group, name it "Frameworks" for example.
-![New group](README/new_group.png)
+4. Run the following command:
+> pod install
 
-### 5. Drag and drom MaxpayPaymentSdk.frameworks to your project. Do not forget set checkmark to copy files.
-![Import library in classes](README/drag_and_drop.png)
-![Select 'Copy items if needed'](README/copy_if_needed.png)
-![Copied files](README/copied_files.png)
+5. Don’t forget to use the **.xcworkspace** file to open your project in Xcode.
 
-### 6. Now import MaxpayPaymentSdk in source file and you will get access to all public objects from framework.
-![Import library in classes](README/import_library_in_classes.png)
+6. In the future, to update to the latest version of the SDK, run:
+> pod update MaxpayPaymentSdk
 
 ## Integration prebuilt UI
 [How to use prebuilt UI see here](README/INTEGRATION.md).
