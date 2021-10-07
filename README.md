@@ -1,5 +1,9 @@
 # Maxpay Payment iOS SDK
 
+![Cocoapods](https://img.shields.io/cocoapods/v/MaxpayPaymentSdk?style=flat-square&cacheSeconds=60)
+[![License](https://img.shields.io/cocoapods/l/MaxpayPaymentSdk?style=flat-square)](https://github.com/maxpay/payment-sdk-ios/blob/master/LICENSE)
+[![Platform](https://img.shields.io/cocoapods/p/MaxpayPaymentSdk?style=flat-square)](https://github.com/maxpay/payment-sdk-ios)
+
 The Maxpay Payment iOS SDK makes it quick and easy to build a payment screen in your iOS app.
 We provide customizable PayPaymentViewController that can be used out-of-the-box.
 
