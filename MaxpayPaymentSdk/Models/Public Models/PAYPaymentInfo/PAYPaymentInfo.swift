@@ -60,6 +60,8 @@ public struct PAYPaymentInfo {
     /// Date of birth of the customer in format YYYY-MM-DD
     public let birthday: String
     
+    public let merchantInfo: PAYMerchantInfo?
+    
     public init(
         transactionType: PAYTransactionType,
         transactionID: String,
@@ -77,7 +79,8 @@ public struct PAYPaymentInfo {
         sale3dCallBackUrl: String,
         sale3dRedirectUrl: String,
         currency: String,
-        birthday: String
+        birthday: String,
+        merchantInfo: PAYMerchantInfo? = nil
     ) {
         self.transactionType = transactionType
         self.transactionID = transactionID
@@ -96,5 +99,6 @@ public struct PAYPaymentInfo {
         self.sale3dRedirectUrl = sale3dRedirectUrl
         self.currency = currency
         self.birthday = birthday
+        self.merchantInfo = merchantInfo
     }
 }

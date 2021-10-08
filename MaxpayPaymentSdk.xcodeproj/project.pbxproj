@@ -100,6 +100,7 @@
 		D7F4FA232566CF97005DE0D1 /* noname_card_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D7F4F9AD2566CF96005DE0D1 /* noname_card_icon@2x.png */; };
 		D7F4FA252566CF97005DE0D1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7F4F9B02566CF96005DE0D1 /* Localizable.strings */; };
 		D7F852D7255980C00016EFFF /* Maxpay.h in Headers */ = {isa = PBXBuildFile; fileRef = D7F852C9255980C00016EFFF /* Maxpay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7DBF60A27106DCC0023497E /* PAYMerchantInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DBF60927106DCC0023497E /* PAYMerchantInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -213,6 +214,7 @@
 		D7F852C6255980C00016EFFF /* MaxpayPaymentSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaxpayPaymentSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7F852C9255980C00016EFFF /* Maxpay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Maxpay.h; sourceTree = "<group>"; };
 		D7F852CA255980C00016EFFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7DBF60927106DCC0023497E /* PAYMerchantInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYMerchantInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -432,6 +434,7 @@
 		62AA933D2643292900BC7FDF /* Public Models */ = {
 			isa = PBXGroup;
 			children = (
+				E7DBF60827106DCC0023497E /* PAYMerchantInfo */,
 				6260650C26448F7600A76693 /* PAYInitInfo */,
 				6260651326448F9000A76693 /* PAYPaymentInfo */,
 				6260651826448FC300A76693 /* PAYCallback */,
@@ -903,6 +906,14 @@
 			path = MaxpayPaymentSdk;
 			sourceTree = "<group>";
 		};
+		E7DBF60827106DCC0023497E /* PAYMerchantInfo */ = {
+			isa = PBXGroup;
+			children = (
+				E7DBF60927106DCC0023497E /* PAYMerchantInfo.swift */,
+			);
+			path = PAYMerchantInfo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1036,6 +1047,7 @@
 				6213807D26F7D07F00FBDCF6 /* PAYZipField.swift in Sources */,
 				62AA93D72643292B00BC7FDF /* PAYCountryField.swift in Sources */,
 				62AA93DE2643292B00BC7FDF /* PAYNetworkError.swift in Sources */,
+				E7DBF60A27106DCC0023497E /* PAYMerchantInfo.swift in Sources */,
 				62AA93B22643292B00BC7FDF /* PAYCustomer.swift in Sources */,
 				62AA93C12643292B00BC7FDF /* PAYDatePickerView.swift in Sources */,
 				62AA93C62643292B00BC7FDF /* PAYPaymentRootView.swift in Sources */,
