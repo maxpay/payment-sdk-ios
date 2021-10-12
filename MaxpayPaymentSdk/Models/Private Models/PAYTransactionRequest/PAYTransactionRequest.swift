@@ -18,7 +18,7 @@ internal struct PAYTransactionRequest: Codable {
     internal let publicKey: String
 
     /// Request signature
-    internal let signature: String
+    internal var signature: String
     
     /// User Id on merchant's side
     internal let merchantUserID: String?
@@ -156,7 +156,11 @@ internal struct PAYTransactionRequest: Codable {
     }
 }
 
+private let excludedFieldsForSignature: Set = ["signature", "card_number", "card_exp_month", "card_exp_year", "cvv", "card_holder", "public_key"]
+
 extension PAYTransactionRequest {
+    
+    
     
     /**
     Creates a new PAYTransactionRequest
@@ -171,14 +175,14 @@ extension PAYTransactionRequest {
        - paymentCard: information about payment card, see **PAYCard**
        - signature: hashed info for transaction
     */
-    init(merchant: PAYMerchant, customer: PAYCustomer, order: PAYOrder, paymentCard: PAYCard, signature: String) {
+    init(merchant: PAYMerchant, customer: PAYCustomer, order: PAYOrder, paymentCard: PAYCard) {
         let sale3DRedirect = merchant.sale3DRedirect
         let geo = customer.address
         
         self.apiVersion = merchant.apiVersion
         self.authType = merchant.authType.rawValue
         self.publicKey = merchant.publicKey
-        self.signature = signature
+        self.signature = ""
         self.merchantUserID = merchant.merchantUserID
         self.merchantDomainName = merchant.merchantDomainName
         self.merchantAffiliateID = merchant.merchantAffiliateID
@@ -216,4 +220,17 @@ extension PAYTransactionRequest {
         self.zip = geo.zip
         self.country = geo.country
     }
+
+    func generateDataForSignature() -> String {
+        return self
+            .pay_dictionary?
+            .compactMapValues { $0 }
+            .mapValues { String(describing: $0) }
+            .filter { !$1.isEmpty && !excludedFieldsForSignature.contains($0) }
+            .map { $0 + "=" + $1 }
+            .sorted()
+            .joined(separator: "|")
+            ?? ""
+    }
+
 }

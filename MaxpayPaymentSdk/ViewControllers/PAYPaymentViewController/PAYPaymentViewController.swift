@@ -14,7 +14,7 @@ final public class PAYPaymentViewController: UIViewController {
     // MARK: - Properties
     
     private let theme: PAYTheme
-    private let updateSignatureBlock: (PAYSignatureInfo, @escaping (String) -> ()) -> ()
+    private let updateSignatureBlock: (String, @escaping (String) -> ()) -> ()
     private let completion: (Result<PAYTransactionResponse, Error>) -> ()
     private let transactionType: PAYTransactionType
     private let networkService = PAYNetworkService.shared
@@ -151,27 +151,26 @@ final public class PAYPaymentViewController: UIViewController {
             .replace(address: rootView?.getBillingAddress())
             .replace(firstname: rootView?.getFirstname(), lastname: rootView?.getLastname())
             .replace(phone: rootView?.getPhone())
-        let newSignatureInfo = PAYSignatureInfo(merchant: currentConfig.merchant, customer: newCustomer, order: currentConfig.order)
+        
+        let newConfiguration = PAYPaymentConfiguration(merchant: currentConfig.merchant,
+                                                        customer: newCustomer,
+                                                        order: currentConfig.order,
+                                                        formFieldsConfiguration: currentConfig.formFieldsConfiguration,
+                                                        isProduction: currentConfig.isProduction)
+        
+        var transactionRequest = PAYTransactionRequest(merchant: newConfiguration.merchant,
+                                                       customer: newConfiguration.customer,
+                                                       order: newConfiguration.order,
+                                                       paymentCard: paymentCard)
+        
+        let newSignatureData = transactionRequest.generateDataForSignature()
         
         //  update signature and send request
-        self.updateSignatureBlock(newSignatureInfo) { [weak self] newSignature in
-            self?.paymentConfiguration = PAYPaymentConfiguration(merchant: currentConfig.merchant,
-                                                                 customer: newCustomer,
-                                                                 order: currentConfig.order,
-                                                                 formFieldsConfiguration: currentConfig.formFieldsConfiguration,
-                                                                 isProduction: currentConfig.isProduction)
+        self.updateSignatureBlock(newSignatureData) { [weak self] newSignature in
+            self?.paymentConfiguration = newConfiguration
             
-            guard let configuration = self?.paymentConfiguration else {
-                self?.process(result: .failure(PAYPaymentControllerError.missingConfiguration))
-                
-                return
-            }
+            transactionRequest.signature = newSignature
             
-            let transactionRequest = PAYTransactionRequest(merchant: configuration.merchant,
-                                                           customer: configuration.customer,
-                                                           order: configuration.order,
-                                                           paymentCard: paymentCard,
-                                                           signature: newSignature)
             self?.networkService.send(transactionRequest: transactionRequest, completion: completion)
             self?.view.endEditing(true)
         }

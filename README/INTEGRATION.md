@@ -19,7 +19,7 @@ First of all [register](https://my.maxpay.com/#/signup) on site [Maxpay](https:/
 
 In your application create all necessary forms and request to collect all data about merchant, customer and order.
 On the basis of the information obtained create **PAYInitInfo**, **PAYPaymentInfo**.
-  
+
 ### 2.1 Set up an PAYTheme
 
 **PAYTheme** objects can be used to visually style Maxpay-provided UI. See [Customize the UI](#markdown-header-9-customize-the-ui) for more information.
@@ -89,41 +89,12 @@ Additional sutype for **PAYPaymentInfo**:
 | sale3d |
 
 ### 2.4 Prepare signature calculation
-Signature is encrypted string which contains all information about merchant, customer and order. Using transaction you can be shure that your data do not leave SDK in open format. To calculate signature, read this [manual](https://maxpay.com/docs/#maxpay-js). To create signature you need to user private key. We highly recommend do this calculation on server side. For this purpose, you should create block with two input parameters: **PAYSignatureInfo** (contains all information to create signature exept private key and completion block. Completion block has encrypted string as input parameter. 
+Signature is encrypted string which contains all information about merchant, customer and order. Using transaction you can be shure that your data do not leave SDK in open format. To calculate signature, read this [manual](https://maxpay.com/docs/#maxpay-js). To create signature you need to user private key. We highly recommend do this calculation on server side. For this purpose, you should create block with two input parameters: **dataForSignature** (contains all information to create signature exept private key and completion block. Completion block has encrypted string as input parameter.
 
 Signature calculation block:
-**(PAYSignatureInfo, @escaping (String) ->()) -> ()**
+**@escaping (_ dataForSignature: String, _ signatureCallback: @escaping (_ signature: String) -> ()) -> ())**
 
-**PAYSignatureInfo** provide information to create signature, actually it contains some fields from **PAYInitInfo** and **PAYPaymentInfo**.
-
-
-	init(
-		initInfo: PAYInitInfo,
-		paymentInfo: PAYPaymentInfo
-	)
-
-| Property            | Type    | Description                              | Note     |
-|---------------------|---------|------------------------------------------|----------|
-| apiVersion          | Int     | Maxpay API version                       | required |
-| authType            | String  | Type of authorization (only one type)    | required |
-| transactionUniqueID | String  | Unique transaction Id                    | required |
-| transactionType     | String  | Type of the transaction                  | required |
-| amount              | String  | Amount of the transaction                | required |
-| currency            | String  | Currency in ISO 4217                     | required |
-| firstName           | String  | The first name of the customer           | required |
-| lastName            | String  | The last name of the customer            | required |
-| address             | String  | Customer's address                       | optional |
-| city                | String  | Customer's city                          | optional |
-| state               | String  | Customer's state                         | optional |
-| zip                 | String  | Customer's zip code                      | optional |
-| country             | String  | Customer's country, ISO 3166-1, alpha-3  | required |
-| phone               | String  | Customer's phone number                  | optional |
-| email               | String  | Customer's email address                 | required |
-| ip                  | String  | Customer's IP address.                   | required |
-| callbackURL         | String  | Callback for SALE3D transaction type.    | optional |
-| redirectURL         | String  | Redirection for SALE3D transaction type  | optional |
-| birthday            | String  | Date of birth of the customer            | optional |
-
+**dataForSignature** contains information to create signature, actually it contains some fields from **PAYInitInfo** and **PAYPaymentInfo**.
 
 ### 2.5 Prepare payment procedure result handling
 
@@ -153,7 +124,7 @@ Signature completion block:
 
 | Property             | Type                                              | Description                  | Note     |
 |----------------------|---------------------------------------------------|------------------------------|----------|
-| signagureCalculation | (PAYSignatureInfo, (String) -> Void) -> Void      | Signature calculation block  | required |
+| signagureCalculation | (String, (String) -> Void) -> Void      | Signature calculation block  | required |
 | completion           | (Result<PAYTransactionResponse, Error>) -> Void   | Payment completion block     | required |
 
 ## 3 Set up an PAYPaymentViewController
@@ -162,8 +133,8 @@ Signature completion block:
 Initialize this class with **PAYInitInfo**, **PAYPaymentInfo** objects and **PAYCallback**.
 
 	init(
-		initInfo: PAYInitInfo, 
-		paymentInfo: PAYPaymentInfo, 
+		initInfo: PAYInitInfo,
+		paymentInfo: PAYPaymentInfo,
 		callbacks: PAYCallback
 	)
 
@@ -172,7 +143,7 @@ Also on this screen customer can change name, address, date of birth or email (i
 ## 4 Completion the payment
 
 After the payment has been processed it will be called completion handler. This handler takes **Result<PAYTransactionResponse, Error>** as input parameter. Usually if you have some technical problem (bad network connection for example) you can received standard Error. You can use code and description from Error to handle this situation and warn user about problem.
-If you have no problem with connection and hardware than you will received response **PAYTransactionResponse** from Maxpay server. 
+If you have no problem with connection and hardware than you will received response **PAYTransactionResponse** from Maxpay server.
 There are two main cases, payment was successfully accepted or rejected by some reason. If payment accepted you will received unique number in 'reference' field.
 
 Server success response example:
@@ -209,10 +180,10 @@ Server failure response example:
 
 
 
- 
-In the end of the payment process there are multiple ways to communication with user. You can store reference number in local or remote database, save in user history, create receipt and send to user email etc. You can redirect user on main screen to continue shopping or to profile screen with history of orders. 
+
+In the end of the payment process there are multiple ways to communication with user. You can store reference number in local or remote database, save in user history, create receipt and send to user email etc. You can redirect user on main screen to continue shopping or to profile screen with history of orders.
 In case you have received an error message there are also multiple options. You can try to describe problem to user using 'message' field, stay on payment screen and offer to user try to use another credit card or check and edit personal information. Or you can redirect him on technical support page.
-In demo application we just show standard Alert with message from server and stay on payment screen. 
+In demo application we just show standard Alert with message from server and stay on payment screen.
 
 Received response **PAYTransactionResponse** contain all information to finish payment flow. Because completion closure creates on user side, in comletion body you will also have access to presenting controller or navigation controller, all variable and all services.
 
@@ -226,7 +197,7 @@ Received response **PAYTransactionResponse** contain all information to finish p
 
 ## 6 Customize the UI
 
-The appearance of the UI components is customizable by using the **PAYTheme** object. 
+The appearance of the UI components is customizable by using the **PAYTheme** object.
 
 ![Payment view controller](themes.png)
 
@@ -259,7 +230,7 @@ The appearance of the UI components is customizable by using the **PAYTheme** ob
 | buttonTitleFont               | UIFont  | Pay button title font                                                 |
 | buttonCornerRadius            | CGFloat | Pay button corner radius                                              |
 
-**Warning**: some of the checkmark colors takes from another properties 
+**Warning**: some of the checkmark colors takes from another properties
 
 checkbox selected color = enabledButtonBackgroundColor
 

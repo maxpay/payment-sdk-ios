@@ -36,7 +36,6 @@
 		62AA93A82643292B00BC7FDF /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA932C2643292900BC7FDF /* DateFormatter.swift */; };
 		62AA93A92643292B00BC7FDF /* Float+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA932D2643292900BC7FDF /* Float+Extensions.swift */; };
 		62AA93AA2643292B00BC7FDF /* Encodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA932F2643292900BC7FDF /* Encodable+Extensions.swift */; };
-		62AA93AB2643292B00BC7FDF /* PAYSignatureInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93332643292900BC7FDF /* PAYSignatureInfo.swift */; };
 		62AA93AC2643292B00BC7FDF /* PAYCardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93352643292900BC7FDF /* PAYCardInfo.swift */; };
 		62AA93AD2643292B00BC7FDF /* PAYAuth3DConfirm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93372643292900BC7FDF /* PAYAuth3DConfirm.swift */; };
 		62AA93AE2643292B00BC7FDF /* PAYTransactionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AA93382643292900BC7FDF /* PAYTransactionRequest.swift */; };
@@ -133,7 +132,6 @@
 		62AA932C2643292900BC7FDF /* DateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		62AA932D2643292900BC7FDF /* Float+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+Extensions.swift"; sourceTree = "<group>"; };
 		62AA932F2643292900BC7FDF /* Encodable+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Encodable+Extensions.swift"; sourceTree = "<group>"; };
-		62AA93332643292900BC7FDF /* PAYSignatureInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYSignatureInfo.swift; sourceTree = "<group>"; };
 		62AA93352643292900BC7FDF /* PAYCardInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYCardInfo.swift; sourceTree = "<group>"; };
 		62AA93372643292900BC7FDF /* PAYAuth3DConfirm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYAuth3DConfirm.swift; sourceTree = "<group>"; };
 		62AA93382643292900BC7FDF /* PAYTransactionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAYTransactionRequest.swift; sourceTree = "<group>"; };
@@ -390,14 +388,6 @@
 			path = "Private Models";
 			sourceTree = "<group>";
 		};
-		62AA93322643292900BC7FDF /* PAYSignatureInfo */ = {
-			isa = PBXGroup;
-			children = (
-				62AA93332643292900BC7FDF /* PAYSignatureInfo.swift */,
-			);
-			path = PAYSignatureInfo;
-			sourceTree = "<group>";
-		};
 		62AA93342643292900BC7FDF /* PAYCardInfo */ = {
 			isa = PBXGroup;
 			children = (
@@ -439,7 +429,6 @@
 				6260651326448F9000A76693 /* PAYPaymentInfo */,
 				6260651826448FC300A76693 /* PAYCallback */,
 				62AA934A2643292900BC7FDF /* PAYFormFieldsConfiguration */,
-				62AA93322643292900BC7FDF /* PAYSignatureInfo */,
 				62AA93482643292900BC7FDF /* PAYTheme */,
 				62AA93462643292900BC7FDF /* PAYTransactionResponse */,
 			);
@@ -1082,7 +1071,6 @@
 				62AA93B82643292B00BC7FDF /* PAYFieldStateObserver.swift in Sources */,
 				62AA93D22643292B00BC7FDF /* PAYTransactionType.swift in Sources */,
 				6260651A26448FCE00A76693 /* PAYCallback.swift in Sources */,
-				62AA93AB2643292B00BC7FDF /* PAYSignatureInfo.swift in Sources */,
 				62AA93AF2643292B00BC7FDF /* PAYCard.swift in Sources */,
 				62AA939F2643292B00BC7FDF /* UIColor+Extensions.swift in Sources */,
 				62AA93CE2643292B00BC7FDF /* PAYBillingView.swift in Sources */,
